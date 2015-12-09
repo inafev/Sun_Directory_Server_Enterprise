@@ -1,0 +1,894 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="Tahoma" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/277494; Windows/10.0.10240 (Win64);"/>
+  <style>
+    body, td {
+      font-family: Tahoma;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="1556"/>
+
+<div>
+<span style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><div><br/></div><div><span style="color: rgb(1, 1, 1); font-size: 30px;"><b>Sun Java System Directory Server Enterprise Edition 6.3.1 (DSEE 6.3.1)</b></span></div><div><span style="color: rgb(1, 1, 1); font-size: 30px;"><b><br/></b></span></div><div style="font-size: 27px;"><b>REQUIREMENTS </b></div><div><br/></div><div><ul><li><b>Online Docs: </b><a href="http://docs.oracle.com/cd/E19261-01/">http://docs.oracle.com/cd/E19261-01/</a> </li><li><b>6.3.1.1.2 Release notes:</b> <a href="http://docs.oracle.com/cd/E19261-01/E26994/html/toc.html">Sun Java System Directory Server Enterprise Edition Bundle Patch 6.3.1.1.2 Release Notes</a>  </li><li><b>Operating System Requirements: </b><a href="http://docs.oracle.com/cd/E19261-01/E26994/html/eof-platform-support.html#scrolltoc">http://docs.oracle.com/cd/E19261-01/E26994/html/eof-platform-support.html#scrolltoc</a></li></ul><div style="font-size: 27px;"><b>Links</b></div><div><ul><li>Notas de la versión 6.3.1 (castellano): <a href="http://docs.oracle.com/cd/E19261-01/821-2407/index.html">http://docs.oracle.com/cd/E19261-01/821-2407/index.html</a> </li><li>Sun ONE Directory Server Resource Kit 5.2 Tools Reference: <a href="http://docs.oracle.com/cd/E19199-01/816-6400-10/contents.html">http://docs.oracle.com/cd/E19199-01/816-6400-10/contents.html</a> </li><li>Admin Guide: <a href="http://docs.oracle.com/cd/E19693-01/819-0995/bcacx/index.html">http://docs.oracle.com/cd/E19693-01/819-0995/bcacx/index.html</a> </li><li>Problemas conocidos (castellano): <a href="http://docs.oracle.com/cd/E19261-01/821-2407/auto6/index.html">http://docs.oracle.com/cd/E19261-01/821-2407/auto6/index.html</a> </li><li>DSEE ldapmodify tool: <a href="http://docs.oracle.com/cd/E19199-01/816-6400-10/lmodify.html">http://docs.oracle.com/cd/E19199-01/816-6400-10/lmodify.html</a> </li><li>ldapmodify tool (openldap) <a href="http://www.linuxcommand.org/man_pages/ldapmodify1.html">http://www.linuxcommand.org/man_pages/ldapmodify1.html</a></li></ul></div><div><br/></div><div><span style="font-size: 30px;"><b>Platform Support</b></span></div></div><div><p>In Directory Server Enterprise Edition, <font color="#E30000">support for Windows 2000,</font> <b><font color="#E30000">Red Hat Advanced Server 3.0, and J2SE platform 1.4 has been removed</font>. Support for the native install package releases for platforms other than the Solaris operating system has been removed. Support for 32–bit versions of the software might be discontinued for some platforms.</b> To be prepared, plan the transition to 64–bit versions of the software and to newer versions of the supported operating systems. See <a href="http://docs.oracle.com/cd/E19261-01/E26994/html/software.html#scrolltoc">Operating System Requirements</a> for details of the newer versions of supported operating systems.</p><p><b><font color="#E30000">JDK versions 1.5 and 1.6 are supported in this release.</font></b></p><p><font color="#E30000">Identity Synchronization for Windows 6.0 Service Pack 1 can synchronize with Windows Active Directory 2008.</font></p><p>Directory Server Enterprise Edition Bundle Patch 6.3.1.1.2 supports Logical Domains, (LDoms), on the SPARC platform for Solaris 10 Update 3 and later versions. For more information about LDoms, see the <a href="http://www.oracle.com/pls/topic/lookup?ctx=820-3268-10&amp;id=820-3268-10"><i>Logical Domains (LDoms) 1.0.1 Administration Guide</i></a>.</p></div><div><hr/><br/></div><div><a href="http://docs.oracle.com/cd/E19261-01/E26994/html/software.html#scrolltoc">http://docs.oracle.com/cd/E19261-01/E26994/html/software.html#scrolltoc</a> <br/><div><h2>Operating System Requirements</h2><a name="indexterm-9"></a><a name="indexterm-10"></a><p>This section covers operating systems, patches and service packs required to support Directory Server Enterprise Edition component products.</p><a name="os-reqts-ds-dps-dsrk"></a><h3>Directory Server, Directory Proxy Server, and Directory Server Resource Kit Operating System Requirements</h3><div>Directory Server, Directory Proxy Server, and Directory Server Resource Kit share the same operating system requirements. The Directory Server Enterprise Edition software has been validated with full installations of the operating systems listed here, not with reduced “base”, “End User”, or “core” installations. Certain operating systems require additional service packs or patches as shown in the following table. For more information, go to <a href="https://support.oracle.com/">My Oracle Support</a>.</div></div></div><div><br/></div><div><br/><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%"><tbody><tr><td align="left" valign="top"><div>Red Hat Enterprise Linux Advanced Server AS and ES 3.0 Update 4 for x86 and AMD x64</div></td><td align="left" valign="top"><div>Supported only for the zip distribution of Directory Server Enterprise Edition.
+<p>No additional software is required. On 64–bit Red Hat systems, Directory Server runs in 32–bit mode but Directory Proxy Server runs in 64–bit mode.</p></div></td></tr><tr><td align="left" valign="top"><div>Red Hat Enterprise Linux Advanced Server AS and ES 4.0 Update 2 for x86 and AMD x64</div></td><td align="left" valign="top"><div>Supported only for the zip distribution of Directory Server Enterprise Edition.
+<p>The following compatibility libraries are recommended:</p><p><tt>compat-gcc-32-3.2.3-47.3.i386.rpm</tt></p><p><tt>compat-gcc-32-c++-3.2.3-47.3.i386.rpm</tt></p><p>The following compatibility library is required:</p><p><tt>compat-libstdc++-33-3.2.3-47.3.rpm</tt></p><p>Even when running Red Hat on a 64-bit system, 32-bit system libraries are installed.</p><p>These compatibility libraries are available from Red Hat media or <a href="https://www.redhat.com/rhn/rhndetails/update/">https://www.redhat.com/rhn/rhndetails/update/</a>.</p><p><b><font color="#AD0000">On 64–bit Red Hat systems, Directory Server runs in 32–bit mode but Directory Proxy Server runs in 64–bit mode.</font></b></p></div></td></tr></tbody></table></td></tr></tbody></table></div></div><div><br/></div><div><hr/><br/></div><div style="font-size: 30px;"><b>README (included in DSE6.3.tar.gz)</b></div><div style="font-size: 30px;"><b><br/></b></div><div>------------------------------------------------------------------------<br/>
+                <br/>
+     Sun Java[tm] System Directory Server Enterprise Edition 6.3<br/>
+                <br/>
+------------------------------------------------------------------------<br/><br/><b>System Requirements</b><br/>
+------------------------<br/>
+Directory Server Enterprise Edition 6.3 runs on the following systems:<br/><br/>
+  * Solaris 10 Operating System for UltraSPARC(R) 64-bit, x86 32-bit, and<br/>
+    AMD x64 64-bit architectures<br/>
+  * Solaris 9 Operating System for UltraSPARC 64-bit and x86 32-bit architectures<br/><br/>
+  * Microsoft Windows 2000 Server, Advanced Server, SP 4 for x86, and<br/>
+    AMD x64 architectures<br/>
+  * Microsoft Windows 2003 Server, Standard and Enterprise Editions SP 1<br/>
+    for x86 and AMD x64 systems<br/>
+    Note: Identity Sychronization for Windows also supports synchronization with <br/>
+    Windows NT SAM Registry.<br/><b><br/><font color="#E30000">  * Red Hat Advanced Server 4.0 U2 for x86, and AMD x64 systems<br/>
+  * Red Hat Advanced Server 3.0 U4 for x86, and AMD x64 systems</font></b><br/><br/>
+    Note: On Windows and Red Hat Advanced Server, Directory Server Enterprise Edition<br/>
+    components run in 32-bit mode, even on 64-bit architectures.  Directory Proxy Server<br/>
+    is the only component that runs in 32-bit as well as in 64-bit mode.<br/><br/>
+  * SuSE Linux Enterprise Server 9 SP4 for x86 32-bit and AMD x64 64-bit architectures<br/>
+  * SuSE Linux Enterprise Server 10 SP1 for x86 32-bit and AMD x64 64-bit architectures<br/><br/>
+    Note: Native package installation is not supported on SuSE platform. Only the zip<br/>
+    installation is available in this release.<br/>
+    Identity Sychronization for Windows and Directory Editor are not supported on SuSE.<br/>
+   <br/>
+  * HP-UX 11.23<br/>
+    Note: Native package installation is not supported on HP-UX. Only the zip<br/>
+    installation is available in this release.<br/>
+    Identity Sychronization for Windows is not supported on HP-UX.<br/><br/>
+For specific information about system requirements, see the Directory<br/>
+Server Enterprise Edition 6.3 Release Notes at:<br/><br/>
+    http://docs.sun.com/doc/820-2759<br/><br/>
+Installation<br/>
+------------------------<br/>
+For installation instructions covering Directory Service Control<br/>
+Center, Directory Server, Directory Proxy Server, Identity<br/>
+Sychronization for Windows, and Directory Server Resource Kit, see<br/>
+the Directory Server Enterprise Edition 6.3 Installation Guide at:<br/><br/>
+    http://docs.sun.com/doc/820-2761<br/><br/>
+For installation instructions covering Directory Editor, see the<br/>
+Directory Editor 1 2005Q1 Installation Guide at:<br/><br/>
+    http://docs.sun.com/doc/819-2191<br/><br/>
+Documentation<br/>
+------------------------<br/>
+Directory Server Enterprise Edition 6.3 includes the following set of<br/>
+product documentation:<br/><br/>
+  * Directory Server Enterprise Edition 6.3 Release Notes<br/>
+  * Directory Server Enterprise Edition 6.3 Evaluation Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Documentation Center<br/>
+  * Directory Server Enterprise Edition 6.3 Deployment Planning Guide<br/>
+  * Identity Synchronization for Windows 6.0 Deployment Planning Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Installation Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Migration Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Administration Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Developer's Guide<br/>
+  * Directory Server Enterprise Edition 6.3 Reference<br/>
+  * Directory Server Enterprise Edition 6.3 Man Page Reference<br/>
+  * Directory Server Enterprise Edition 6.3 Troubleshooting Guide<br/><br/>
+All product documentation as well as the latest Release Notes<br/>
+can be accessed at the following URL:<br/><br/>
+    http://docs.sun.com/coll/1224.4<br/><br/>
+------------------------------------------------------------------------<br/>
+Copyright (c) 2008 Sun Microsystems, Inc. All rights reserved.<br/></div><div><br/></div><div><br/></div><div><hr/></div><div><h1 style="font-size: 47px;"><font size="3" style="font-size: 30px;">Obtención del software</font></h1><p>Puede descargar el software de Sun Java System Directory Server Enterprise Edition 6.3 desde la siguiente ubicación.</p><div><ul><li><a href="http://www.sun.com/software/products/directory_srvr_ee/get.jsp">http://www.sun.com/software/products/directory_srvr_ee/get.jsp</a></li></ul><a href="http://www.sun.com/software/products/directory_srvr_ee/get.jsp"></a></div></div><div><br/></div><div style="font-size: 30px;"><b>Oracle and Sun</b></div><div><ul><li><a href="http://www.oracle.com/us/sun/index.htm">http://www.oracle.com/us/sun/index.htm</a> </li></ul></div><div><h2 style="font-size: 39px;"><font size="3" style="font-size: 30px;">Find Sun Software Products</font></h2></div><div><ul><li><a href="http://www.oracle.com/us/sun/sun-products-map/index.html">http://www.oracle.com/us/sun/sun-products-map/index.html</a> </li></ul></div><div><br/></div><div><table><tbody><tr><td style="font-size: 30px;"><b>Oracle Identity Management (Sun Directory Server Enterprise Edition)<br/></b></td><td style="font-size: 30px;"><b><br/></b></td></tr></tbody></table></div><div><ul><li><a href="http://www.oracle.com/technology/products/id_mgmt/odsee/index.html">Oracle Directory Server Enterprise Edition</a> </li><li>Documentation: <a href="http://www.oracle.com/technetwork/middleware/id-mgmt/documentation/index.html">http://www.oracle.com/technetwork/middleware/id-mgmt/documentation/index.html</a> </li></ul></div><div><br/></div><div><hr/><br/></div><div><h2>Legacy Sun Identity Management Documentation </h2></div><div><a href="http://www.oracle.com/technetwork/documentation/legacy-sun-identity-mgmt-193462.html">http://www.oracle.com/technetwork/documentation/legacy-sun-identity-mgmt-193462.html</a> </div><div><br/></div><div><table border="1" cellpadding="5" cellspacing="2" width="100%"><tbody><tr><td>E19261-01</td><td><a href="http://download.oracle.com/docs/cd/E19261-01/index.html" target="_blank">View Library</a></td><td><a href="http://download.oracle.com/docs/cds/E19261-01.zip">Download</a></td><td>Sun Java System Directory Server Enterprise Edition 6.3</td></tr></tbody></table></div><div><br/></div><div><br/></div><div><hr/><a href="http://docs.oracle.com/cd/E19261-01/index.html">http://docs.oracle.com/cd/E19261-01/index.html</a> </div><div><h1>Sun Java System Directory Server Enterprise Edition 6.3</h1><h2>Sun Java System Directory Server Enterprise Edition 6.3</h2><div><table><tbody><tr><td>Sun Java System Directory Server Enterprise Edition Bundle Patch 6.3.1.1.2 Release Notes</td><td><a href="http://docs.oracle.com/cd/E19261-01/E26994/html/index.html" title="Sun Java System Directory Server Enterprise Edition Bundle Patch 6.3.1.1.2 Release Notes">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/E26994/E26994.pdf" title="Sun Java System Directory Server Enterprise Edition Bundle Patch 6.3.1.1.2 Release Notes">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3.1 Release Notes</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-5817/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3.1 Release Notes">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-5817/820-5817.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3.1 Release Notes">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Release Notes</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2759/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Release Notes">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2759/820-2759.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Release Notes">PDF</a></td></tr><tr><td style="font-size: 23px;"><font color="#8600A4"><b>Sun Java System Directory Server Enterprise Edition 6.3 Documentation Center</b></font></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2757/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Documentation Center">HTML</a></td><td></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Deployment Planning Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2760/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Deployment Planning Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2760/820-2760.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Deployment Planning Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Installation Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2761/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Installation Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2761/820-2761.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Installation Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Migration Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2762/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Migration Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2762/820-2762.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Migration Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Administration Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2763/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Administration Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2763/820-2763.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Administration Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Developer's Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2764/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Developer's Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2764/820-2764.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Developer's Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Reference</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2765/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Reference">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2765/820-2765.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Reference">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Evaluation Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2766/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Evaluation Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2766/820-2766.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Evaluation Guide">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Man Page Reference</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2767/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Man Page Reference">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2767/820-2767.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Man Page Reference">PDF</a></td></tr><tr><td>Sun Java System Directory Server Enterprise Edition 6.3 Troubleshooting Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2768/index.html" title="Sun Java System Directory Server Enterprise Edition 6.3 Troubleshooting Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-2768/820-2768.pdf" title="Sun Java System Directory Server Enterprise Edition 6.3 Troubleshooting Guide">PDF</a></td></tr><tr><td>Sun Java System Identity Synchronization for Windows 6.0 Deployment Planning Guide</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-0386/index.html" title="Sun Java System Identity Synchronization for Windows 6.0 Deployment Planning Guide">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-0386/820-0386.pdf" title="Sun Java System Identity Synchronization for Windows 6.0 Deployment Planning Guide">PDF</a></td></tr><tr><td>System Virtualization Support in Sun Java System Products</td><td><a href="http://docs.oracle.com/cd/E19261-01/820-4651/index.html" title="System Virtualization Support in Sun Java System Products">HTML</a></td><td><a href="http://docs.oracle.com/cd/E19261-01/820-4651/820-4651.pdf" title="System Virtualization Support in Sun Java System Products">PDF</a></td></tr></tbody></table></div></div><div><br/></div><div><br/></div><div><br/></div><div><hr/><br/></div><div><h1>Sun Java System Access Manager 7.1</h1></div><div>Access Manager Repository Plug-in (Sun Java System Directory Server): <a href="http://docs.oracle.com/cd/E19462-01/819-4669/gemhb/index.html">http://docs.oracle.com/cd/E19462-01/819-4669/gemhb/index.html</a> </div><div><br/></div><div><h1>Oracle Identity Management 10<i>g</i> (10.1.4.x) Downloads</h1></div><div>Oracle Fusion Middleware Documentation Library. Identity and Access Management 11g Release2 (11.1.2.1.0): <a href="http://docs.oracle.com/cd/E37115_01/index.htm">http://docs.oracle.com/cd/E37115_01/index.htm</a>  </div><div><h2>Download Instructions</h2><div><a href="http://www.oracle.com/technetwork/middleware/ias/downloads/101401-099957.html">http://www.oracle.com/technetwork/middleware/ias/downloads/101401-099957.html</a> </div><div><br/></div>
+Oracle Application Server downloads range from a single CD to multiple (up to three) CDs. In order<br/>
+to properly install software you need to download all CDs from each set. Click on each CD link and<br/>
+save each file to a target destination on your system. By pointing on each link you can review a specific<br/>
+file name, size, and on UNIX platforms, CKSUM information.
+<p><strong>On Windows:</strong> Extract content of ZIP files or execute EXE files. To verify the integrity of a<br/>
+downloaded file, after the file has been transfer compare its size with the file size listed on this page.</p><p><strong>On UNIX:</strong> To extract the cpio file, move the cpio file to an empty directory, then do:<br/>
+cpio -idvm &lt; &lt;cpio_file&gt;. To verify the integrity of a downloaded file, after the file has been transferred<br/>
+to a Unix host, run cksum and compare with the cksum information listed on this page.</p></div><div><br/></div><div><br/></div><div><hr/><hr/><div style="text-align: center;"><b style="font-size: 30px;"><b>VMWARE PLAYER</b></b></div><hr/></div><div><hr/></div><div style="font-size: 30px;"><b><br/></b></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip.png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [1].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [2].png" type="image/png" height="778" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;" width="1148"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [3].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [4].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [5].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [6].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><h1><font size="3">Understanding the Moved It or Copied It Option in VMWare Workstation</font></h1><p>Whenever you start a virtual machine in VMWare Workstation that has been moved or copied you are asked to specify which one of those two things happened. This tip explains the importance of your selection.</p></div><div><p>If you’ve ever moved or copied a virtual machine and tried to launch it using VMWare Workstation then you’ve seen the dialogue that asks you whether or not the VM was moved or copied. The reason this option is presented to you is <u>based around the concept of the virtual machines Universally Unique Identifier, or UUID. The UUID is stored in the SMBIOS for each VM. This is a 16 byte value that is based upon an identifier of the virtual host and the path of the VM, and is used to uniquely identify each VM on the virtual host.</u></p><p><u>That being the case, if you moved the virtual machine you can keep the UUID by telling VMWare that you moved it. If it was copied you should be sure and generate a new UUID by telling VMWare that the VM was copied.</u> If two VMs are have the same UUID there could be negative results, including one of the VMs not being allowed to boot.</p></div><div style="font-size: 15px;"><b><b><font face="Courier New"><br/></font></b></b></div><div style="font-size: 15px;"><b><b><font face="Courier New"><br/></font></b></b></div><div style="font-size: 15px;"><font face="Courier New"><b><font color="#E30000">[dsee@localhost ~]$ /sbin/ip a s</font></b><br/>
+1: lo: &lt;LOOPBACK,UP&gt; mtu 16436 qdisc noqueue<br/>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br/>
+    inet 127.0.0.1/8 scope host lo<br/>
+    inet6 ::1/128 scope host<br/>
+       valid_lft forever preferred_lft forever<br/>
+2: eth0: &lt;BROADCAST,MULTICAST&gt; mtu 1500 qdisc noop qlen 1000<br/>
+    link/ether 00:0c:29:03:d5:3a brd ff:ff:ff:ff:ff:ff<br/>
+3: sit0: &lt;NOARP&gt; mtu 1480 qdisc noop<br/>
+    link/sit 0.0.0.0 brd 0.0.0.0<br/>
+[dsee@localhost ~]$ su -<br/>
+Password:<br/><font color="#E30000">[root@localhost ~]# service network restart</font><br/>
+Shutting down loopback interface:                          [  OK  ]<br/>
+Setting network parameters:                                [  OK  ]<br/>
+Bringing up loopback interface:                            [  OK  ]<br/><font color="#E30000">Bringing up interface eth0:  Device eth0 has different MAC address than expected, ignoring.</font><br/>
+                                                           [FAILED]<br/><br/><font color="#E30000">[root@localhost ~]# cd /etc/sysconfig/network-scripts/</font><br/>
+[root@localhost network-scripts]# ls<br/>
+ifcfg-eth0  ifdown-aliases  ifdown-ipv6  ifdown-ppp  ifup          ifup-ippp   ifup-ipx   ifup-plusb  ifup-routes  ifup-wireless      network-functions-ipv6<br/>
+ifcfg-lo    ifdown-ippp     ifdown-isdn  ifdown-sit  ifup-aliases  ifup-ipsec  ifup-isdn  ifup-post   ifup-sit     init.ipv6-global<br/>
+ifdown      ifdown-ipsec    ifdown-post  ifdown-sl   ifup-ib       ifup-ipv6   ifup-plip  ifup-ppp    ifup-sl      network-functions<br/><font color="#E30000">[root@localhost network-scripts]# cat ifcfg-eth0</font><br/>
+DEVICE=eth0<br/>
+BOOTPROTO=dhcp<br/><font color="#A600C4">HWADDR=00:0C:29:A4:E4:F0    ------------&gt; ELIMINAR!!</font><br/>
+ONBOOT=yes<br/>
+TYPE=Ethernet<br/><font color="#E30000">[root@localhost network-scripts]# vim ifcfg-eth0<br/>
+[root@localhost network-scripts]# cat ifcfg-eth0</font><br/>
+DEVICE=eth0<br/>
+BOOTPROTO=dhcp<br/>
+ONBOOT=yes<br/>
+TYPE=Ethernet<br/>
+[root@localhost network-scripts]#<br/><font color="#E30000">[root@localhost network-scripts]# service network restart</font><br/>
+Shutting down loopback interface:                          [  OK  ]<br/>
+Setting network parameters:                                [  OK  ]<br/>
+Bringing up loopback interface:                            [  OK  ]<br/>
+Bringing up interface eth0:                                [  OK  ]<br/>
+[root@localhost network-scripts]# ip a s<br/>
+1: lo: &lt;LOOPBACK,UP&gt; mtu 16436 qdisc noqueue<br/>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br/>
+    inet 127.0.0.1/8 brd 127.255.255.255 scope host lo<br/>
+    inet6 ::1/128 scope host<br/>
+       valid_lft forever preferred_lft forever<br/>
+2: eth0: &lt;BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc pfifo_fast qlen 1000<br/>
+    link/ether 00:0c:29:03:d5:3a brd ff:ff:ff:ff:ff:ff<br/>
+    <b><font color="#E30000">inet 172.31.131.213/24 brd 172.31.131.255 scope global eth0</font></b><br/>
+    inet6 fe80::20c:29ff:fe03:d53a/64 scope link<br/>
+       valid_lft forever preferred_lft forever<br/>
+3: sit0: &lt;NOARP&gt; mtu 1480 qdisc noop<br/>
+    link/sit 0.0.0.0 brd 0.0.0.0<br/>
+[root@localhost network-scripts]#</font></div><div style="font-size: 30px;"><b><b><br/></b></b></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [7].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;"><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [8].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div style="font-size: 30px;"><br/></div><div style="font-size: 30px;">[MobaXterm@windows7] ➤ <font color="#E30000">ssh dsee@172.31.131.213</font><br/>
+Permanently added '172.31.131.213' (RSA) to the list of known hosts.<br/>
+dsee@172.31.131.213's password:<br/>
+Last login: Wed Jan 15 16:09:52 2014<br/>
+[dsee@localhost ~]$<br/></div><div style="font-size: 30px;"><b><b><br/></b></b></div><div style="font-size: 30px;"><div style="font-size: medium;"><br/><hr/><hr/><div style="text-align: center;"><b style="font-size: 30px;"><b>DSEE 6.3.1 + TOMCAT 5.5 DEPLOYMENT</b></b></div><hr/></div><div style="font-size: medium;"><hr/></div><div><b style="font-size: 27px;">ENVIRONMENT</b></div></div><div><ul><li>RHEL 4.8 <b>i386</b> AS</li><li>JRE 5.0.22 i586</li><li>tomcat 5.5</li><li>MobaXterm (windows)</li></ul></div><div><b><b><font color="#E30000"><br/></font></b></b></div><div><b><b><font color="#E30000">VM login: dsee/dsee</font></b></b></div><div><font color="#E30000"><b>VM root password: dsee</b></font></div><div><font color="#E30000"><b>Deployment path: /opt/</b></font></div><div><font color="#E30000"><b>Software installation availabe in /home/dsee/software</b></font></div><div><font color="#E30000"><b><br/></b></font></div><div><font face="Courier New">[dsee@localhost software]$ pwd<br/><b>/home/dsee/software</b><br/>
+[dsee@localhost software]$ ls -l<br/>
+total 16384<br/>
+drwxr-xr-x  3 dsee dsee     4096 Jan 15 14:23 docsDSEE6.3<br/>
+-rwxr-xr-x  1 dsee dsee 16718866 Jan 15 13:26 jre-1_5_0_22-linux-i586-rpm.bin<br/>
+-rwxr-xr-x  1 dsee dsee      582 Jan 15 13:26 proxy.pac<br/>
+drwxr-xr-x  2 dsee dsee     4096 Jan 15 13:27 SunJavaSystemDirectoryServer6.3<br/>
+drwxr-xr-x  2 dsee dsee     4096 Jan 15 13:27 tomcat5.5<br/>
+[dsee@localhost software]$</font></div><div style="font-size: 30px;"><b><br/></b></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/Image.png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><ul><li>DSCC deployment with native package installation runs on default port <b>6789</b></li><li>DSCC deployment with zip installation runs in <a href="http://hostname:8080/dscc">http://hostname:8080/dscc</a> </li><li><b>Cacao:</b> Common Agent Container</li></ul></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [9].png" type="image/png" height="1016" style="cursor: default;cursor: default;" width="1680"/></div><div><hr/><div><b style="font-size: 30px;"><b>1) COMPAT-GCC (incluído en VM del curso)</b></b></div></div><div><br/></div><div><b>[root@localhost RPMS]# rpm -ivh compat-gcc-32-3.2.3-47.3.i386.rpm compat-gcc-32-c++-3.2.3-47.3.i386.rpm compat-libstdc++-33-3.2.3-47.3.i386.rpm</b><br/>
+warning: compat-gcc-32-3.2.3-47.3.i386.rpm: V3 DSA signature: NOKEY, key ID db42a60e<br/>
+Preparing...                ########################################### [100%]<br/>
+        package compat-libstdc++-33-3.2.3-47.3 is already installed<br/>
+[root@localhost RPMS]#<br/></div><div><br/></div><div><hr/><div><b style="font-size: 27px;">2) JAVA ENVIRONMENT &amp; /etc/profile</b></div></div><div><b style="font-size: 27px;">2.1) JRE 1.5.0.22 deployment</b></div><div><font face="Courier New">[dsee@localhost ~]$ pwd<br/>
+/home/dsee<br/>
+[dsee@localhost ~]$ cd software/<br/>
+[dsee@localhost software]$ ls<br/>
+docsDSEE6.3  jre-1_5_0_22-linux-i586-rpm.bin  proxy.pac  SunJavaSystemDirectoryServer6.3  tomcat5.5<br/>
+[dsee@localhost software]$ su<br/>
+Password:<br/>
+[root@localhost software]# chmod +x jre-1_5_0_22-linux-i586-rpm.bin<br/>
+[root@localhost software]# ./jre-1_5_0_22-linux-i586-rpm.bin<br/></font></div><div><font face="Courier New">Do you agree to the above license terms? [yes or no]<br/>
+yes<br/>
+Unpacking...<br/>
+Checksumming...<br/>
+0<br/>
+0<br/>
+Extracting...<br/>
+UnZipSFX 5.50 of 17 February 2002, by Info-ZIP (Zip-Bugs@lists.wku.edu).<br/>
+  inflating: jre-1_5_0_22-linux-i586.rpm<br/>
+Preparing...                ########################################### [100%]<br/>
+   1:jre                    ########################################### [100%]<br/>
+/usr/java/jre1.5.0_22<br/><br/>
+Done.<br/>
+[root@localhost software]#</font><br/></div><div><font face="Courier New"><br/></font></div><div><b style="font-size: 27px;">2.2) Jdk 1.6.0_45 deployment (opcional)</b></div><div><b><br/></b></div><div><font face="Courier New">[root@localhost software]# chmod +x jdk-6u45-linux-i586-rpm.bin<br/>
+[root@localhost software]# ./jdk-6u45-linux-i586-rpm.bin<br/>
+Unpacking...<br/>
+Checksumming...<br/>
+Extracting...<br/>
+UnZipSFX 5.50 of 17 February 2002, by Info-ZIP (Zip-Bugs@lists.wku.edu).<br/>
+  inflating: jdk-6u45-linux-i586.rpm<br/>
+  inflating: sun-javadb-common-10.6.2-1.1.i386.rpm<br/>
+  inflating: sun-javadb-core-10.6.2-1.1.i386.rpm<br/>
+  inflating: sun-javadb-client-10.6.2-1.1.i386.rpm<br/>
+  inflating: sun-javadb-demo-10.6.2-1.1.i386.rpm<br/>
+  inflating: sun-javadb-docs-10.6.2-1.1.i386.rpm<br/>
+  inflating: sun-javadb-javadoc-10.6.2-1.1.i386.rpm<br/>
+Preparing...                ########################################### [100%]<br/>
+   1:jdk                    ########################################### [100%]<br/>
+Unpacking JAR files...<br/>
+        rt.jar...<br/>
+        jsse.jar...<br/>
+        charsets.jar...<br/>
+        tools.jar...<br/>
+        localedata.jar...<br/>
+        plugin.jar...<br/>
+        javaws.jar...<br/>
+        deploy.jar...<br/>
+Installing JavaDB<br/>
+Preparing...                ########################################### [100%]<br/>
+   1:sun-javadb-common      ########################################### [ 17%]<br/>
+   2:sun-javadb-core        ########################################### [ 33%]<br/>
+   3:sun-javadb-client      ########################################### [ 50%]<br/>
+   4:sun-javadb-demo        ########################################### [ 67%]<br/>
+   5:sun-javadb-docs        ########################################### [ 83%]<br/>
+   6:sun-javadb-javadoc     ########################################### [100%]<br/><br/>
+Done.</font><br/></div><div><b><br/></b></div><div><b style="font-size: 27px;">2.3) /etc/profile</b></div><div><b><br/></b></div><div>Add the following line at the bottom of /etc/profile:</div><div><font color="#E30000">     export JRE_HOME=/usr/java/jre1.5.0_22</font><br/></div><div><font color="#E30000">     export JAVA_HOME=/usr/java/jdk1.6.0_45           ----------&gt; si se instala el JDK</font></div><div><font color="#FF0000">     export CATALINA_HOME=/opt/tomcat<br/></font></div><div><font color="#FF0000">     export CATALINA_BASE=/opt/tomcat</font></div><div><font color="#E30000"><br/></font></div><div>[root@localhost software]# vim /etc/profile<br/>
+[root@localhost software]# source /etc/profile<br/>
+[root@localhost software]# env | grep -i jre<br/>
+JRE_HOME=/usr/java/jre1.5.0_22<br/>
+[root@localhost software]#<br/></div><div><b><br/></b></div><div><hr/></div><div><b><br/></b></div><div style="font-size: 27px;"><b>3) Tomcat 5.5 Deployment</b></div><div><font color="#8600A4">EJECUTO TOMCAT CON MISMO USUARIO QUE DSEE (dsee)</font></div><div><b><br/></b></div><div>[root@localhost software]# pwd<br/>
+/home/dsee/software<br/>
+[root@localhost software]# cd tomcat5.5/<br/>
+[root@localhost tomcat5.5]# ls<br/>
+apache-tomcat-5.5.36-admin.tar.gz  apache-tomcat-5.5.36-compat.tar.gz  apache-tomcat-5.5.36-deployer.tar.gz  apache-tomcat-5.5.36-embed.tar.gz  apache-tomcat-5.5.36-fulldocs.tar.gz  apache-tomcat-5.5.36.tar.gz<br/><font color="#E30000"><b>[root@localhost tomcat5.5]# tar xvzf apache-tomcat-5.5.36.tar.gz -C /opt/                   --------------------&gt; 1st tgz!!</b></font><br/>
+apache-tomcat-5.5.36/bin/catalina.sh<br/>
+apache-tomcat-5.5.36/bin/digest.sh<br/>
+apache-tomcat-5.5.36/bin/setclasspath.sh<br/>
+apache-tomcat-5.5.36/bin/shutdown.sh<br/>
+apache-tomcat-5.5.36/bin/startup.sh<br/>
+apache-tomcat-5.5.36/bin/tool-wrapper.sh<br/>
+apache-tomcat-5.5.36/bin/version.sh<br/>
+apache-tomcat-5.5.36/conf/<br/></div><div>...</div><div>...</div><div><br/></div><div style="font-size: 30px;"><a href="http://localhost:8080/admin">http://localhost:8080/admin</a> webapp: </div><div><br/></div><div><b><font color="#E30000">[dsee@localhost tomcat5.5]$ tar xvzf apache-tomcat-5.5.36-admin.tar.gz -C /opt/</font></b><b style="color: rgb(227, 0, 0);">                   --------------------&gt; 2nd tgz!!</b><b><font color="#E30000"><br/></font></b>apache-tomcat-5.5.36/LICENSE<br/>
+apache-tomcat-5.5.36/NOTICE<br/>
+apache-tomcat-5.5.36/RELEASE-NOTES<br/>
+apache-tomcat-5.5.36/server/webapps/<b><font color="#E30000">admin/</font></b><br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/connector/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/context/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/host/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/images/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/realm/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/resources/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/server/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/service/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/users/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/valve/<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/controls.tld<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/catalina-admin.jar<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/commons-beanutils.jar<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/commons-collections.jar<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/commons-digester-1.8.jar<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/lib/struts.jar<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/struts-bean.tld<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/struts-config.xml<br/>
+apache-tomcat-5.5.36/server/webapps/admin/WEB-INF/struts-html.tld<br/></div><div>...</div><div>...</div><div><font color="#E30000"><b>[dsee@localhost tomcat5.5]$ tar xvzf apache-tomcat-5.5.36-compat.tar.gz -C /opt/</b></font><b style="color: rgb(227, 0, 0);">                   --------------------&gt; 3rd tgz!!</b><font color="#E30000"><b><br/></b></font>apache-tomcat-5.5.36/LICENSE<br/>
+apache-tomcat-5.5.36/NOTICE<br/>
+apache-tomcat-5.5.36/RELEASE-NOTES<br/>
+apache-tomcat-5.5.36/bin/<br/>
+apache-tomcat-5.5.36/common/<br/>
+apache-tomcat-5.5.36/common/endorsed/<br/>
+apache-tomcat-5.5.36/bin/jmx.jar<br/>
+apache-tomcat-5.5.36/common/endorsed/xercesImpl.jar<br/>
+apache-tomcat-5.5.36/common/endorsed/xml-apis.jar<br/>
+[dsee@localhost tomcat5.5]$<br/></div><div><br/></div><div><br/></div><div><br/></div><div>[root@localhost tomcat5.5]# cd /opt/<br/>
+[root@localhost opt]# ls -ltr<br/>
+total 8<br/>
+drwxr-xr-x  11 root root 4096 Jan 15 17:20 apache-tomcat-5.5.36<br/><font color="#E30000">[root@localhost opt]# chown -R dsee.dsee /opt/apache-tomcat-5.5.36/<br/>
+[root@localhost opt]# ln -s apache-tomcat-5.5.36/ tomcat<br/></font>[root@localhost opt]# ls -l<br/>
+total 12<br/>
+drwxr-xr-x  11 dsee dsee 4096 Jan 15 17:20 apache-tomcat-5.5.36<br/>
+lrwxrwxrwx   1 root root   21 Jan 15 17:21 tomcat -&gt; apache-tomcat-5.5.36/<br/>
+[root@localhost opt]#<br/></div><div><font color="#E30000">[root@localhost opt]# exit</font><br/>
+exit<br/>
+[dsee@localhost software]$ whoami<br/>
+dsee<br/>
+[dsee@localhost software]$ cd /opt/tomcat/bin/<br/><font color="#E30000"><b>[</b>dsee@localhost bin]$ /opt/tomcat/bin/version.sh</font><br/>
+Neither the JAVA_HOME nor the JRE_HOME environment variable is defined<br/>
+At least one of these environment variable is needed to run this program<br/>
+[dsee@localhost bin]$ env | grep -i jre<br/><font color="#E30000">[dsee@localhost bin]$ source /etc/profile<br/>
+[dsee@localhost bin]$ /opt/tomcat/bin/version.sh</font><br/>
+Using CATALINA_BASE:   /opt/tomcat<br/>
+Using CATALINA_HOME:   /opt/tomcat<br/>
+Using CATALINA_TMPDIR: /opt/tomcat/temp<br/>
+Using JRE_HOME:        /usr/java/jre1.5.0_22<br/>
+Using CLASSPATH:       /opt/tomcat/bin/bootstrap.jar<br/><font color="#8600A4">Server version: Apache Tomcat/5.5.36</font><br/>
+Server built:   Oct 5 2012 02:04:50<br/>
+Server number:  5.5.36.0<br/>
+OS Name:        Linux<br/>
+OS Version:     2.6.9-89.EL<br/>
+Architecture:   i386<br/>
+JVM Version:    1.5.0_22-b03<br/>
+JVM Vendor:     Sun Microsystems Inc.<br/>
+[dsee@localhost bin]$<br/></div><div><font color="#E30000">[dsee@localhost bin]$ /opt/tomcat/bin/startup.sh</font><br/>
+Using CATALINA_BASE:   /opt/tomcat<br/>
+Using CATALINA_HOME:   /opt/tomcat<br/>
+Using CATALINA_TMPDIR: /opt/tomcat/temp<br/>
+Using JRE_HOME:        /usr/java/jre1.5.0_22<br/>
+Using CLASSPATH:       /opt/tomcat/bin/bootstrap.jar<br/>
+[dsee@localhost bin]$<br/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [10].png" type="image/png" height="1016" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;" width="1442"/></div><div><br/></div><div><b><font color="#E30000">CLEAR PRIVATE DATA SI NO DETECTA /ADMIN WEBAPP</font></b></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [11].png" type="image/png" height="874" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;" width="1315"/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [12].png" type="image/png" height="874" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;" width="1315"/></div><div><br/></div><div><br/></div><div><b>[dsee@localhost conf]$ cat /opt/tomcat/conf/tomcat-users.xml</b><br/>
+&lt;?xml version='1.0' encoding='utf-8'?&gt;<br/>
+&lt;tomcat-users&gt;<br/>
+  &lt;role rolename=&quot;tomcat&quot;/&gt;<br/>
+  &lt;role rolename=&quot;role1&quot;/&gt;<br/>
+  &lt;user username=&quot;tomcat&quot; password=&quot;tomcat&quot; roles=&quot;tomcat&quot;/&gt;<br/>
+  &lt;user username=&quot;both&quot; password=&quot;tomcat&quot; roles=&quot;tomcat,role1&quot;/&gt;<br/>
+  &lt;user username=&quot;role1&quot; password=&quot;tomcat&quot; roles=&quot;role1&quot;/&gt;<br/>
+&lt;/tomcat-users&gt;<br/><font color="#E30000">[dsee@localhost conf]$ vim /opt/tomcat/conf/tomcat-users.xml</font><br/>
+[dsee@localhost conf]$ cat /opt/tomcat/conf/tomcat-users.xml<br/>
+&lt;?xml version='1.0' encoding='utf-8'?&gt;<br/>
+&lt;tomcat-users&gt;<br/>
+  &lt;role rolename=&quot;tomcat&quot;/&gt;<br/>
+  &lt;role rolename=&quot;role1&quot;/&gt;<br/>
+  <font color="#E30000">&lt;role rolename=&quot;manager-gui&quot;/&gt;<br/>
+  &lt;role rolename=&quot;manager&quot;/&gt;<br/>
+  &lt;role rolename=&quot;admin&quot;/&gt;</font><br/>
+  &lt;user username=&quot;tomcat&quot; password=&quot;tomcat&quot; roles=&quot;tomcat<font color="#E30000">,manager,admin</font>&quot;/&gt;<br/>
+  &lt;user username=&quot;both&quot; password=&quot;tomcat&quot; roles=&quot;tomcat,role1&quot;/&gt;<br/>
+  &lt;user username=&quot;role1&quot; password=&quot;tomcat&quot; roles=&quot;role1&quot;/&gt;<br/>
+&lt;/tomcat-users&gt;<br/></div><div><br/></div><div><b><font color="#E30000">[dsee@localhost tomcat]$ /opt/tomcat/bin/shutdown.sh;/opt/tomcat/bin/startup.sh</font></b><br/>
+Using CATALINA_BASE:   /opt/tomcat<br/>
+Using CATALINA_HOME:   /opt/tomcat<br/>
+Using CATALINA_TMPDIR: /opt/tomcat/temp<br/>
+Using JRE_HOME:        /usr/java/jre1.5.0_22<br/>
+Using CLASSPATH:       /opt/tomcat/bin/bootstrap.jar<br/>
+Using CATALINA_BASE:   /opt/tomcat<br/>
+Using CATALINA_HOME:   /opt/tomcat<br/>
+Using CATALINA_TMPDIR: /opt/tomcat/temp<br/>
+Using JRE_HOME:        /usr/java/jre1.5.0_22<br/>
+Using CLASSPATH:       /opt/tomcat/bin/bootstrap.jar<br/>
+[dsee@localhost tomcat]$<br/></div><div><br/></div><div><br/></div><div><hr/></div><div><br/></div><div><div style="font-size: 30px;"><b><b>4) DSEE 6.3.1 DEPLOYMENT</b></b></div><div><font color="#E30000"><b><br/></b></font></div><div><b><font color="#E30000">su </font></b></div><div><b><font color="#E30000">mkdir -p /opt/sun/dsee/</font></b></div><div><b><font color="#E30000">chown -R dsee.dsee /opt/sun/dsee</font></b><br/></div><div><font color="#E30000"><b>exit</b></font></div><div><font color="#E30000"><b><br/></b></font></div><div style="font-weight: bold;"><div style="font-weight: normal;">[dsee@localhost SunJavaSystemDirectoryServer6.3]$ pwd<br/><font color="#E30000">/home/dsee/software/SunJavaSystemDirectoryServer6.3</font><br/>
+[dsee@localhost SunJavaSystemDirectoryServer6.3]$ ls<br/>
+DSEE.6.3.Linux-X86-full.tar.gz<br/><font color="#E30000">[dsee@localhost SunJavaSystemDirectoryServer6.3]$ tar xvzf DSEE.6.3.Linux-X86-full.tar.gz</font><br/></div><div style="font-weight: normal;">[dsee@localhost SunJavaSystemDirectoryServer6.3]$ ls -F<br/>
+DSEE.6.3.Linux-X86-full.tar.gz*  <font color="#E30000">DSEE_Directory_Editor/</font>  DSEE_Identity_Synchronization_for_Windows/  <font color="#E30000">DSEE_ZIP_Distribution/ </font> Legal/  LICENSE.txt*  <font color="#E30000">README.txt*</font><br/>
+[dsee@localhost SunJavaSystemDirectoryServer6.3]$</div><div style="font-weight: normal;"><font color="#E30000">[dsee@localhost SunJavaSystemDirectoryServer6.3]$ cd DSEE_ZIP_Distribution/</font><br/></div></div><div style="font-weight: bold;"><b><br/></b></div><b>[dsee@localhost</b> <font color="#E30000" style="font-weight: bold;">DSEE_ZIP_Distribution</font><b>]$ ./dsee_deploy install -i <font color="#E30000">/opt/sun/dsee/</font></b><br/>
+Do you accept the license terms ? &lt;yes/no&gt; :<br/>
+Please reply yes or no.<br/><br/>
+Do you accept the license terms ? &lt;yes/no&gt; : yes<br/>
+Check availability of port 11162<br/>
+Checking running Directory Server instances<br/>
+Checking running Directory Proxy Server instances<br/>
+Unzipping sun-ldap-base.zip ...<br/>
+Unzipping sun-ldap-dsrk6.zip ...<br/>
+Unzipping sun-ldap-dsrk-man.zip ...<br/>
+Unzipping sun-ldapcsdk-tools.zip ...<br/>
+Unzipping sun-ldapcsdk-dev.zip ...<br/>
+Unzipping sun-ldap-ljdk.zip ...<br/>
+Unzipping sun-ldap-jre.zip ...<br/>
+Unzipping sun-ldap-shared.zip ...<br/>
+Unzipping sun-ldap-shared-l10n.zip ...<br/>
+Unzipping sun-ldap-directory.zip ...<br/>
+Unzipping sun-ldap-directory-l10n.zip ...<br/>
+Unzipping sun-ldap-directory-config.zip ...<br/>
+Unzipping sun-ldap-directory-man.zip ...<br/>
+Unzipping sun-ldap-directory-dev.zip ...<br/>
+Unzipping sun-ldap-mfwk.zip ...<br/>
+Unzipping sun-ldap-cacao.zip ...<br/>
+Unzipping sun-ldap-console-agent.zip ...<br/>
+Unzipping sun-ldap-console-cli.zip ...<br/>
+Unzipping sun-ldap-console-common.zip ...<br/>
+Unzipping sun-ldap-console-var.zip ...<br/>
+Unzipping sun-ldap-jdmk.zip ...<br/>
+Unzipping sun-ldap-directory-client.zip ...<br/>
+Unzipping sun-ldap-directory-client-l10n.zip ...<br/>
+Unzipping sun-ldap-proxy.zip ...<br/>
+Unzipping sun-ldap-proxy-l10n.zip ...<br/>
+Unzipping sun-ldap-proxy-man.zip ...<br/>
+Unzipping sun-ldap-proxy-client.zip ...<br/>
+Unzipping sun-ldap-proxy-client-l10n.zip ...<br/>
+Unzipping sun-ldap-console-gui.zip ...<br/>
+Unzipping sun-ldap-console-gui-help.zip ...<br/>
+Unzipping sun-ldap-console-gui-l10n.zip ...<br/>
+Unzipping sun-ldap-console-gui-help-l10n.zip ...<br/>
+Creating WAR file for Console<br/><br/>
+Configuring Cacao at /opt/sun/dsee/dsee6/cacao_2<br/>
+Setting Cacao parameter jdmk-home with default value [/opt/sun/dsee/dsee6/private]<br/>
+Setting Cacao parameter java-home with default value [/opt/sun/dsee/jre]<br/>
+Setting Cacao parameter nss-lib-home with default value [/opt/sun/dsee/dsee6/private/lib]<br/>
+Setting Cacao parameter nss-tools-home with default value [/opt/sun/dsee/dsee6/bin]<br/>
+Registering DSCC agent into cacao<br/>
+Starting Cacao if necessary<br/>
+Registering JESMF agent into Cacao<br/>
+Making a copy of dsee_deploy<br/>
+Making a copy of listrunnings<br/>
+You can now start your Directory Server Instances<br/>
+You can now start your Directory Proxy Server Instances<br/>
+[dsee@localhost DSEE_ZIP_Distribution]$<br/><div><br/></div></div><div>This step installs a <b>Common Agent Container,<font color="#E30000">cacao</font>, with the local Directory Service Control Center agent as well, allowing you to use DSCC to create server instances.</b>The previous command works properly only if you have not yet installed a Common Agent Container using the default port,11162.</div><div><br/></div><div><br/></div><div style="font-size: 30px;"><b>4.1) DSEE binaries in PATH environment (optional)</b></div><div>[dsee@dsee ~]$ vim .bash_profile<br/>
+[dsee@dsee ~]$ cat /home/dsee/.bash_profile<br/>
+# .bash_profile<br/><br/>
+# Get the aliases and functions<br/>
+if [ -f ~/.bashrc ]; then<br/>
+        . ~/.bashrc<br/>
+fi<br/><br/>
+# User specific environment and startup programs<br/><br/>
+PATH=$PATH:$HOME/bin<font color="#E30000"><b>:/opt/sun/dsee/ds6/bin/:/opt/sun/dsee/dsee6/cacao_2/cacao/bin/:</b></font><b><font color="#E30000">/opt/sun/dsee/dsrk6/bin/</font></b><br/><br/>
+export PATH<br/>
+unset USERNAME<br/></div><div>[dsee@dsee ~]$ <font color="#E30000">source /home/dsee/.bash_profile</font><br/></div><div><br/></div><div style="font-size: 27px;"><b>4.2) </b><b style="font-size: 30px;">Directory Server Control Center: </b><b>DSCC WAR file deployment with Tomcat 5.5</b></div><div><b><br/></b></div><div>The DSCC WAR file supports the following application servers:<br/>
+■ Sun Java System Application Server 8.2<br/>
+■ Tomcat 5.5</div><div><br/></div><div><br/></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ find /opt/sun/dsee/ -name dscc.war<br/><b><font color="#E30000">/opt/sun/dsee/var/dscc6/dscc.war</font></b><br/>
+[dsee@localhost DSEE_ZIP_Distribution]$<br/></div><div><br/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [13].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ ls -F <b><font color="#E30000">/opt/sun/dsee/dscc6/dccapp</font></b><br/>
+app.xml  css/  html/  images/  js/  jsp/  <font color="#E30000">WEB-INF/</font><br/>
+[dsee@localhost DSEE_ZIP_Distribution]$<br/></div><div><br/></div><div><br/></div><div><b><font color="#FF0000">localhost:8080/dscc</font></b></div><div>WarningThe DSCC Registry is not running</div><div>Directory Service Control Center requires the DSCC Registry to be up and running. Starts the DSCC registry using the dsadm command.</div><div><br/></div><div><br/></div><div><b style="font-size: 27px;">4.2.1)</b> <b style="font-size: 30px;">DSCC WAR: enablePooling in web.xml</b></div><div>Add the emphasized text in the${CATALINA_BASE}/conf/web.xmlfile as shown below:</div><div><br/></div><div>[dsee@localhost conf]$ <font color="#E30000"><b>vim /opt/tomcat/conf/web.xml</b></font></div><div><br/><font face="Courier New">    &lt;servlet&gt; <b> -----------&gt; línea #231  ---&gt; 231G </b><br/>
+        <b>&lt;servlet-name&gt;jsp&lt;/servlet-name&gt;</b><br/>
+        &lt;servlet-class&gt;org.apache.jasper.servlet.<b>JspServlet</b>&lt;/servlet-class&gt;<br/>
+        &lt;init-param&gt;<br/>
+            &lt;param-name&gt;fork&lt;/param-name&gt;<br/>
+            &lt;param-value&gt;false&lt;/param-value&gt;<br/>
+        &lt;/init-param&gt;<br/>
+        &lt;init-param&gt;<br/>
+            &lt;param-name&gt;xpoweredBy&lt;/param-name&gt;<br/>
+            &lt;param-value&gt;false&lt;/param-value&gt;<br/>
+        &lt;/init-param&gt;<br/><b><font color="#E30000">        &lt;init-param&gt;<br/>
+            &lt;param-name&gt;enablePooling&lt;/param-name&gt;<br/>
+            &lt;param-value&gt;false&lt;/param-value&gt;<br/>
+         &lt;/init-param&gt;</font></b><br/>
+        &lt;load-on-startup&gt;3&lt;/load-on-startup&gt;<br/>
+    &lt;/servlet&gt;</font><br/><br/></div><div><br/></div><div>[dsee@localhost conf]$ <b><font color="#E30000">/opt/tomcat/bin/shutdown.sh;/opt/tomcat/bin/startup.sh</font></b><br/></div><div><br/></div><div><span style="font-size: 30px;"><b>4.3) Initialize the Directory Server Control Center - DSCC registry </b></span></div><div><span style="font-size: 30px;"><b><br/></b></span></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ <font color="#E30000"><b>/opt/sun/dsee/dscc6/bin/dsccsetup ads-create</b></font><br/>
+Choose password for Directory Service Manager:           <font color="#8600A4">(password)</font><br/>
+Confirm password for Directory Service Manager:<br/>
+Creating DSCC registry...<br/>
+DSCC Registry has been created successfully<br/>
+[dsee@localhost DSEE_ZIP_Distribution]$<br/></div><div><br/></div><div><b style="font-size: 30px;"><b>4.4) dsccsetup initialize </b></b></div><div><b><font color="#E30000">[dsee@localhost ~]$ /opt/sun/dsee/dscc6/bin/dsccsetup initialize</font></b><br/>
+***<br/>
+DSCC Application cannot be registered because it is not installed<br/>
+***<br/>
+DSCC Agent is already registered<br/>
+***<br/>
+DSCC Registry has already been created<br/>
+***<br/>
+[dsee@localhost ~]$</div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [14].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><font color="#E30000"><b>admin/password</b></font></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [15].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div><span style="font-size: 30px;"><b><br/></b></span></div><div><b style="font-size: 30px;"><b>4.5) </b></b><b style="font-size: 30px;">EXAMPLE 1 Creating a Directory Server Instance </b></div><div><b><font color="#E30000"><br/></font></b></div><div>/opt/sun/dsee/ds6/bin/dsadm --help</div><div>/opt/sun/dsee/ds6/bin/dsadm create/delete/start/stop</div><div><b><font color="#E30000"><br/></font></b></div><div><b style="font-size: 30px;"><b>4.5.1) dsadm create</b></b></div><div>The dsadm command is the local administration command for Directory Server instances. Use the dsadm command with any of the subcommands described in this man page.<br/>
+dsadm must be used while the server is stopped (except subcommands dsadm info,dsadm stop and dsadm restart). It must be run from the local machine where the server instance is<br/>
+located. <b><font color="#8600A4">This command must be run by the username that is the Operating System owner of the server instance, or by root.</font></b> </div><div><br/></div><div>The new instance has default ports 389 for LDAP, 636 for LDAPS for root users, <b><font color="#8600A4">and 1389 for LDAP, 1636 for LDAPS for non-rootusers</font></b></div><div><b><br/></b></div><div><b><font color="#E30000">[dsee@localhost bin]$ </font><font color="#E30000">/opt/sun/dsee/ds6/bin</font><font color="#E30000">/dsadm create -p 1389 -P 1636 /opt/sun/dsee/ds</font></b></div><div>Choose the Directory Manager password:          <font color="#8600A4">(password)</font><br/>
+Confirm the Directory Manager password:<br/>
+Use 'dsadm start '/opt/sun/dsee/ds'' to start the instance</div><div><br/></div><div><b style="font-size: 30px;"><b>4.5.2) dsadm start</b></b></div><div><b><font color="#E30000">[dsee@localhost bin]$ /opt/sun/dsee/ds6/bin/dsadm start /opt/sun/dsee/ds</font></b><br/>
+Directory Server instance '/opt/sun/dsee/ds' started: pid=21573<br/>
+[dsee@localhost bin]$<br/></div><div><br/></div><div><b style="font-size: 30px;"><b>4.5.3) dsadm info ds</b></b></div><div><font color="#E30000"><b>[dsee@localhost bin]$ /opt/sun/dsee/ds6/bin/dsadm info --all /opt/sun/dsee/ds</b></font><br/>
+Instance Path:          /opt/sun/dsee/ds<br/>
+Owner:                  dsee(dsee)<br/>
+Non-secure port:        1389<br/>
+Listen address:         0.0.0.0<br/>
+Secure port:            1636<br/>
+Secure listen address:  0.0.0.0<br/>
+Bit format:             32-bit<br/>
+State:                  Running<br/>
+Server PID:             21573<br/>
+DSCC url:               -<br/>
+Instance version:       D-A00<br/>
+[dsee@localhost bin]$</div><div><br/></div><div><b style="font-size: 30px;"><b>4.5.4) dsadm info dscc</b></b></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ <b><font color="#E30000">/opt/sun/dsee/ds6/bin/dsadm info --all --separator = /opt/sun/dsee/var/dscc6/dcc/ads</font></b><br/>
+instance-path=/opt/sun/dsee/var/dscc6/dcc/ads<br/>
+owner=dsee(dsee)<br/>
+port=3998<br/>
+listen-address=0.0.0.0<br/>
+secure-port=3999<br/>
+secure-listen-address=0.0.0.0<br/>
+bit-format=32-bit<br/>
+state=running<br/>
+server-pid=25524<br/>
+dscc-url=-<br/>
+layout-tag=D-A00<br/>
+[dsee@localhost DSEE_ZIP_Distribution]$<br/></div><div><br/></div><div><b style="font-size: 30px;"><b>4.5.5) dsadm stop (optional)</b></b></div><div><br/></div><div><b><font color="#E30000">/opt/sun/dsee/ds6/bin/dsadm stop /opt/sun/dsee/ds</font></b></div><div><br/></div><div><b style="font-size: 30px;"><b>4.5.6) cacaoadm status (cacao component, optional)</b></b></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ <b><font color="#E30000">/opt/sun/dsee/dsee6/cacao_2/cacao/bin/cacaoadm status</font></b><br/>
+default instance is DISABLED at system startup.<br/>
+Current retries count : 0/4<br/>
+Processes:<br/>
+21720<br/>
+Uptime: 0 day(s), 0:1</div><div><br/></div><div><b style="font-size: 30px;"><b>4.6) </b></b><b style="font-size: 30px;">EXAMPLE 2 Deleting a Directory Server Instance (optional)</b></div><div><br/></div><div><div><b>[dsee@localhost bin]$ /opt/sun/dsee/ds6/bin/dsadm delete /opt/sun/dsee/ds</b><br/>
+Removing '/opt/sun/dsee/ds' directory ...<br/>
+Directory Server instance '/opt/sun/dsee/ds' deleted<br/>
+[dsee@localhost bin]$<br/></div><br/></div><div><br/><hr/><div><b style="font-size: 30px;"><b>5) DIRECTORY EDITOR DEPLOYMENT</b></b></div></div><div><br/></div><div>[dsee@localhost DSEE_ZIP_Distribution]$ cd ..<br/>
+[dsee@localhost SunJavaSystemDirectoryServer6.3]$ cd<br/>
+DSEE.6.3.Linux-X86-full.tar.gz             DSEE_Identity_Synchronization_for_Windows/ Legal/                                     README.txt<br/>
+DSEE_Directory_Editor/                     DSEE_ZIP_Distribution/                     LICENSE.txt<br/><b><font color="#E30000">[dsee@localhost SunJavaSystemDirectoryServer6.3]$ cd DSEE_Directory_Editor/</font></b><br/></div><div>[dsee@localhost DSEE_Directory_Editor]$ ls -F<br/>
+de.class  <b><font color="#8600A4">DE_InstallConfigGuide.pdf</font></b>  DE_ReleaseNotes.pdf  install.bat  <b><font color="#E30000">install.sh</font></b><br/>
+[dsee@localhost DSEE_Directory_Editor]$ <b><font color="#E30000">chmod +x install.sh</font></b><br/></div><div><b><font color="#E30000"><br/></font></b></div><div>[dsee@localhost DSEE_Directory_Editor]$ <b>su</b><br/>
+Password:<br/>
+[root@localhost DSEE_Directory_Editor]# <b><font color="#8600A4">mkdir -p /var/opt/sun/install</font></b><br/>
+[root@localhost DSEE_Directory_Editor]# exit<br/>
+exit<br/>
+[dsee@localhost DSEE_Directory_Editor]$</div><div><br/></div><div><b><font color="#8600A4">ENABLE XSERVER IN MOBAXTERM !!!!</font></b></div><div><br/></div><div><b><font color="#E30000">[dsee@localhost DSEE_Directory_Editor]$ ./install.sh</font></b><br/>
+Starting Sun Java System Directory Editor 6.0 Installer<br/></div><div>...</div><div>...</div><div>...</div><div>For inquiries please contact: Sun Microsystems, Inc. 4150 Network Circle, Santa<br/>
+Clara, California 95054. (Form ID#011801)<br/><br/>
+   Have you read, and do you accept, all of the terms of the preceding Software<br/>
+   License Agreement? If so, choose 'yes' and the installation will continue.<br/>
+   If not, choose 'no' and the installation program will end without installing<br/>
+   the product. [no] {&quot;&lt;&quot; goes back, &quot;!&quot; exits} <b><font color="#8600A4">yes</font></b><br/><br/></div><div>The Directory Editor  components will be installed in the following directory.<br/>
+Specify the directory location where you want to install the Directory Editor<br/>
+program.<br/><br/>
+   Directory to install Directory Editor components into [/home/dsee] {&quot;&lt;&quot; goes<br/>
+   back, &quot;!&quot; exits}: <b><font color="#8600A4">/opt/tomcat/webapps</font></b><br/><br/>
+Checking disk space...<br/><br/><br/>
+The following items for the product Directory Editor will be installed:<br/><br/>
+Product: Directory Editor<br/><b><font color="#E30000">Location: /opt/tomcat/webapps</font></b><br/>
+Space Required: 8.16 MB<br/>
+-----------------------------<br/>
+Directory Editor war file<br/><br/><br/>
+Ready to Install<br/><br/><font color="#8600A4">1. Install Now</font><br/>
+2. Start Over<br/>
+3. Exit Installation<br/><br/>
+   What would you like to do [1] {&quot;&lt;&quot; goes back, &quot;!&quot; exits}? 1<br/><br/>
+Installing Directory Editor<br/>
+|-1%--------------25%-----------------50%-----------------75%--------------100%|<br/><br/><br/>
+Installation details:<br/><br/>
+     Product           Result     More Information<br/>
+1.  Directory Editor  Installed  Available<br/><br/>
+2. Done<br/><br/>
+   Enter the number corresponding to the desired selection for more<br/>
+   information, or enter 2 to continue [2] {&quot;!&quot; exits}: <b><font color="#8600A4">1</font></b></div><div>/var/opt/sun/install/logs/Directory_Editor_install.B01161140 does not exist<br/>
+....<br/>
+Failed:<br/>
+        Log File: /var/opt/sun/install/logs/Directory_Editor_install.B01161140<br/><br/>
+     Product           Result     More Information<br/>
+1.  Directory Editor  Installed  Available<br/><br/>
+2. Done<br/><br/>
+   Enter the number corresponding to the desired selection for more<br/>
+   information, or enter 2 to continue [2] {&quot;!&quot; exits}: <b><font color="#8600A4">2</font></b></div><div>[dsee@localhost DSEE_Directory_Editor]$</div><div><br/></div><div><b style="font-size: 30px;"><b>5.1) CHECKING DIRECTORY EDITOR WEBAPP DEPLOYMENT (optional)</b></b></div><div style="font-size: 30px;"><b>5.1.1) Antes de instalar DE</b></div><div>[dsee@localhost tomcat]$ cd webapps/</div><div>[dsee@localhost webapps]$ ls<br/>
+balancer  dscc  dscc.war  jsp-examples  ROOT  servlets-examples  tomcat-docs  webdav<br/>
+[dsee@localhost webapps]$ pwd<br/>
+/opt/tomcat/webapps</div><div><b><br/></b></div><div style="font-size: 30px;"><b>5.1.2) Después de instalar DE</b></div><div><br/></div><div>[dsee@localhost webapps]$ ls<br/>
+balancer  de  de.war  dscc  dscc.war  jsp-examples  ROOT  servlets-examples  tomcat-docs  uninstall_Directory_Editor.class  webdav<br/>
+[dsee@localhost webapps]$<br/></div><div>[dsee@localhost webapps]$ ls -F<br/>
+balancer/  <font color="#E30000"><b>de/</b></font>  <b><font color="#E30000">de.war</font></b>  dscc/  dscc.war  jsp-examples/  ROOT/  servlets-examples/  tomcat-docs/  uninstall_Directory_Editor.class  webdav/<br/>
+[dsee@localhost webapps]$<br/></div><div><b style="font-size: 30px;"><b><br/></b></b></div><div><b style="font-size: 30px;"><b>5.2) Configuring the Policy File </b></b></div><div><br/></div><div>If you will be running Tomcat with the Security Manager turned on, you must configure the application server’s catalina.policy file (located in <b>$Appserver_home\conf\catalina.policy</b>) to give Directory Editor permission to access the application server.</div><div><br/></div><div>[dsee@localhost DSEE_Directory_Editor]$ <font color="#E30000">vim /opt/apache-tomcat-5.5.36/conf/catalina.policy</font></div><div><br/></div><div>• Add the following line to the bottom of the policy file <b>to grant all permissions:</b><br/><font color="#E30000"><br/></font></div><div><font color="#E30000"><strike>grant codeBase &quot;file:${catalina.home}/webapps/de/-&quot; {<br/>
+     permission java.security.AllPermission;<br/>
+};</strike></font></div><div><b><br/></b></div><div><font color="#E30000">grant codeBase &quot;file:/opt/tomcat/webapps/de/-&quot; {<br/>
+   permission java.security.AllPermission;<br/>
+};<br/></font></div><div><br/></div><div><br/></div><div>[dsee@localhost conf]$ <b><font color="#E30000">/opt/tomcat/bin/shutdown.sh;/opt/tomcat/bin/startup.sh</font></b></div><div><br/></div><div><b style="font-size: 30px;"><b>5.3) Setting up JAAS conf and setenv.sh (Tomcat 5.5)</b></b></div><div><span style="font-size: 30px;"><b><br/></b></span></div><div><b>Workaround para que la autenticación de Directory Editor funcione con Tomcat 5.5 </b></div><div><b><br/></b></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><a href="https://community.oracle.com/thread/2014094?start=0">https://community.oracle.com/thread/2014094?start=0</a></div>
+ </div><div>OK the problem was between the chair and keyboard. <b><font color="#E30000">I didn't read the release notes, which have a section for using tomcat 5.5 instead of 5.0.</font></b> <b>There is an extra file that you must create and add to your tomcat config in order to get DE working on tomcat 5.5. </b></div><div><br/></div><div><b>here is the info re: Directory Editor and Tomcat 5.5:</b></div><div><div><a href="http://docs.sun.com/app/docs/doc/820-2487/de-bugs-fixed-known">http://docs.sun.com/app/docs/doc/820-2487/de-bugs-fixed-known</a></div>
+ </div><div><div><b>When deploying on Tomcat 5.5, login fails due to a missing JAAS configuration file. </b></div>
+To work around this issue, <b>first create tomcat-install-path/bin/setenv.sh</b> containing the following line:</div></blockquote><div><br/>
+[dsee@localhost bin]$ <font color="#E30000">vim /opt/tomcat/bin/setenv.sh</font><br/><br/><b><font color="#E30000">JAVA_OPTS=&quot;-Djava.security.auth.login.config=$CATALINA_HOME/conf/jaas.conf&quot;</font></b><br/><br/><div>[dsee@localhost bin]$ <font color="#E30000">chmod +x /opt/tomcat/bin/setenv.sh</font></div><br/></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>Next create tomcat-install-path/conf/jaas.conf. Edit the file to contain the following lines:</b></div></blockquote><div><br/>
+[dsee@localhost bin]$ vim /opt/tomcat/conf/jaas.conf<br/><br/><font color="#FF0000">SunDirectoryLogin {<br/>
+com.sun.dml.auth.SunDirectoryLoginModule required;<br/>
+};</font></div><div><font color="#FF0000"><br/></font></div><div>[dsee@localhost conf]$ <b><font color="#E30000">/opt/tomcat/bin/shutdown.sh;/opt/tomcat/bin/startup.sh</font></b></div><div><b style="font-size: 30px;"><b><br/></b></b></div><div><b style="font-size: 30px;"><b>5.4) Load sample data in your directory (optional)</b></b></div><div><br/></div><div>Examples that use command-line tools depend on sample data residing under the <b>dc=example,dc=com </b>suffix of your directory.<br/></div><div><br/></div><div><b>Read the Example.ldif file to find bind passwords needed in the examples </b></div><div><br/></div><div>[dsee@localhost ldif]$ <b>vim /opt/sun/dsee/ds6/ldif/Example.ldif</b></div><div><b><br/></b></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>dn: uid=hmiller, ou=People, dc=example,dc=com</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>cn: Harry Miller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>sn: Miller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>givenname: Harry</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: top</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: person</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: organizationalPerson</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: inetOrgPerson</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>ou: Human Resources</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>ou: People</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>l: Santa Clara</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>uid: hmiller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>mail: hmiller@example.com</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>telephonenumber: +1 408 555 9804</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>facsimiletelephonenumber: +1 408 555 9332</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>roomnumber: 4304</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>userpassword: hillock</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b># Harry is a Directory Administrator and therefore should not</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b># be subject to any resource limits.</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsLookThroughLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsSizeLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsTimeLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsIdleTimeout: -1</div></blockquote></blockquote><div><br/></div><div><b style="font-size: 30px;"><b>5.4.1) Create suffix dc=example,dc=com</b></b></div><div><b style="font-size: 30px;"><b><br/></b></b></div><div>Create suffix and load the Example.ldif content into the directory by using the following commands:</div><div><br/></div><div><b><font color="#E30000">[dsee@localhost conf]$ /opt/sun/dsee/ds6/bin/dsconf create-suffix -h localhost -p 1389 dc=example,dc=com</font></b><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter <font color="#8600A4">&quot;cn=Directory Manager&quot;</font> password:             <font color="#8600A4"> (password)</font><br/>
+[dsee@localhost conf]$<br/><br/></div><div><b style="font-size: 30px;"><b>5.4.2) Load Example.ldif</b></b></div><div><br/></div><div>[dsee@localhost bin]$ <font color="#E30000">/opt/sun/dsee/ds6/bin/dsconf import -h localhost -p 1389 /opt/sun/dsee/ds6/ldif/Example.ldif dc=example,dc=com</font><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/><b>Enter &quot;cn=Directory Manager&quot; password:</b>             <font color="#8600A4"> (password)</font><b><br/></b> New data will override existing data of the suffix &quot;dc=example,dc=com&quot;.<br/>
+Initialization will have to be performed on replicated suffixes.<br/>
+Do you want to continue [y/n] ?  y<br/>
+## Index buffering enabled with bucket size 40<br/>
+## Beginning import job...<br/>
+## Processing file &quot;/opt/sun/dsee/ds6/ldif/Example.ldif&quot;<br/>
+## Finished scanning file &quot;/opt/sun/dsee/ds6/ldif/Example.ldif&quot; (160 entries)<br/>
+## Workers finished; cleaning up...<br/>
+## Workers cleaned up.<br/>
+## Cleaning up producer thread...<br/>
+## Indexing complete.<br/>
+## Starting numsubordinates attribute generation. This may take a while, please wait for further activity reports.<br/>
+## Numsubordinates attribute generation complete. Flushing caches...<br/>
+## Closing files...<br/>
+## Import complete.  Processed 160 entries in 4 seconds. (40.00 entries/sec)<br/><br/>
+Task completed (slapd exit code: 0).<br/>
+[dsee@localhost bin]$<br/></div><div><br/></div><div><b style="font-size: 30px;"><b>5.4.3) Generate Test Data for examples</b></b></div><div><br/></div><div><b>/opt/sun/dsee/dsrk6/bin/makeldif </b></div><div><br/></div><div>[dsee@localhost ~]$ <b>ls /opt/sun/dsee/dsrk6/bin/example_files/</b><br/>
+cities  example.template  first.names  last.names  solaris.template  states  streets<br/>
+[dsee@localhost ~]$<br/></div><div><br/></div><div><br/></div><div><b>[dsee@localhost example_files]$ cat /home/dsee/test.template</b><br/>
+define suffix=dc=example,dc=com<br/>
+define maildomain=example.com<br/><br/>
+branch: ou=test,[suffix]<br/>
+subordinateTemplate: person:100<br/><br/>
+template: person<br/>
+rdnAttr: uid<br/>
+objectclass: top<br/>
+objectclass: person<br/>
+objectclass: organizationalPerson<br/>
+objectclass: inetOrgPerson<br/>
+givenName: &lt;first&gt;<br/>
+sn: &lt;last&gt;<br/>
+cn: {givenName} {sn}<br/>
+initials: {givenName:1}{sn:1}<br/>
+employeeNumber: &lt;sequential&gt;<br/>
+uid: test{employeeNumber}<br/>
+mail: {uid}@[maildomain]<br/>
+userPassword: auth{employeeNumber}{employeeNumber}<br/>
+telephoneNumber: &lt;random&gt;<br/>
+description: This is the description for {cn}.<br/><br/>
+[dsee@localhost example_files]$<br/></div><div><br/></div><div><br/></div><div>[dsee@localhost example_files]$ <b><font color="#E30000">cd /opt/sun/dsee/dsrk6/bin/example_files</font></b><br/></div><div><b>[dsee@localhost example_files]$ <font color="#E30000">/opt/sun/dsee/dsrk6/bin/makeldif -t /home/dsee/test.template -o /home/dsee/test.ldif</font></b><br/>
+Processing complete.<br/>
+101 total entries written.<br/>
+[dsee@localhost example_files]$ <b><font color="#E30000">vim /home/dsee/test.ldif</font></b>             (optional)</div><div><br/></div><div><b>[dsee@localhost dsee]$ vim /opt/sun/dsee/ds6/ldif/Example.ldif</b></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>...</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>dn: uid=hmiller, ou=People, dc=example,dc=com</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>cn: Harry Miller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>sn: Miller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>givenname: Harry</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: top</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: person</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: organizationalPerson</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>objectclass: inetOrgPerson</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>ou: Human Resources</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>ou: People</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>l: Santa Clara</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>uid: hmiller</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>mail: hmiller@example.com</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>telephonenumber: +1 408 555 9804</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>facsimiletelephonenumber: +1 408 555 9332</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>roomnumber: 4304</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>userpassword: hillock</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b># Harry is a Directory Administrator and therefore should not</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b># be subject to any resource limits.</b></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsLookThroughLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsSizeLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsTimeLimit: -1</div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>nsIdleTimeout: -1</div></blockquote></blockquote><div><br/></div><div><br/></div><div>[dsee@localhost ~]$ <b><font color="#E30000">/opt/sun/dsee/dsrk6/bin/ldapmodify -p 1389 -a -c -D uid=hmiller,ou=People,dc=example,dc=com -w - -f </font></b><b><font color="#E30000">/home/dsee/</font></b><b><font color="#E30000">test.ldif</font></b></div><div>Enter bind password:            <b><font color="#8600A4">(hillock)</font></b><br/>
+adding new entry ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test0,ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test1,ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test2,ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test3,ou=test,dc=example,dc=com<br/></div><div>...</div><div>..</div><div>..</div><div>adding new entry uid=test97,ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test98,ou=test,dc=example,dc=com<br/><br/>
+adding new entry uid=test99,ou=test,dc=example,dc=com<br/></div><div><br/></div><div><hr/><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [16].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [17].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [18].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div><img src="DSEE deployment on RHEL 4.8 i386 AS_files/ScreenClip [19].png" type="image/png" style="cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;cursor: default;"/></div><div><br/></div><div><br/></div><div><hr/></div><div style="text-align: center;font-size: 40px;"><b>FIN</b></div><div><hr/></div><div><br/></div><div><b style="font-size: 40px;">Startup of services after VM reboot:</b></div><div><br/></div><div>/opt/tomcat/bin/startup.sh<br/>
+/opt/sun/dsee/ds6/bin/dsadm start /opt/sun/dsee/ds<br/><div>/opt/sun/dsee/ds6/bin/dsadm start /opt/sun/dsee/var/dscc6/dcc/ads</div></div><div>/opt/sun/dsee/dsee6/cacao_2/cacao/bin/cacaoadm start<br/><br/></div><div>/opt/sun/dsee/ds6/bin/dsadm info --all /opt/sun/dsee/ds</div><div>/opt/sun/dsee/ds6/bin/dsadm info --all --separator = /opt/sun/dsee/var/dscc6/dcc/ads<br/><div>/opt/sun/dsee/dsee6/cacao_2/cacao/bin/cacaoadm status</div></div><div><br/></div><div><br/></div><div><u><b>MISMOS COMANDOS CON PATH:</b></u></div><div><br/></div><div><font color="#FF0000">/opt/tomcat/bin/startup.sh<br/>
+dsadm start /opt/sun/dsee/ds<br/></font><div><font color="#FF0000">dsadm start /opt/sun/dsee/var/dscc6/dcc/ads</font></div></div><div><font color="#FF0000">cacaoadm start</font><br/><br/></div><div>dsadm info --all /opt/sun/dsee/ds</div><div>dsadm info --all --separator = /opt/sun/dsee/var/dscc6/dcc/ads<br/><div>cacaoadm status</div></div><div><br/></div><div><br/></div><div><br/></div><div>[dsee@dsee Desktop]$ <b>/opt/sun/dsee/ds6/bin/dsconf info -h localhost -p 1389</b><br/><font face="Courier New">Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:  r<br/>
+Instance path    :  /opt/sun/dsee/ds<br/>
+Global State     :  read-write<br/>
+Host Name        :  localhost.localdomain<br/>
+Port             :  1389<br/>
+Secure port      :  1636<br/>
+Total entries    :  313<br/><br/>
+Suffixes         :  dc=example,dc=com<br/><br/><b>No active tasks</b><br/>
+[dsee@dsee Desktop]$</font></div><div><br/></div><div><hr/><b style="font-size: 40px;">Modifying the Configuration Using DSCC</b><br/>
+The recommended method for modifying the configuration is to use DSCC. This browser interface provides task-based controls to help you set up your configuration quickly and efficiently. Using DSCC, you can modify a configuration setting on one server and then copy that configuration setting to other servers. In addition, the DSCC interface manages the complexity and interdependence of the configuration for you. Detailed procedures for modifying the configuration using DSCC can be found in the DSCC online help.</div><div><br/></div><div><br/></div><div><b><u>Show server configuration properties:</u></b></div><div><span style="font-family: 'Courier New';">[dsee@dsee Desktop]$ </span><b style="font-family: 'Courier New';">/opt/sun/dsee/ds6/bin/dsconf help-properties -h localhost -p 1389 -v </b></div><div><b style="font-family: 'Courier New';"><br/></b></div><div><b><u>Show memory cache properties:</u></b></div><div><font face="Courier New">[dsee@dsee Desktop]$ <b>/opt/sun/dsee/ds6/bin/dsconf help-properties -h localhost -p 1389 -v | grep cache</b><br/>
+SER  db-cache-size                      rw          MEMORY_SIZE (Ex: 3G,2M,200k,10000b)              nsslapd-dbcachesize                                  Memory available for all indexes (Default: 32M)<br/>
+SER  dn-cache-count                     rw     6.1  INTEGER | unlimited|disabled                     nsslapd-dn-cachesize                                 Cache size of DN in term of entries (Default: unlimited)<br/>
+SER  dn-cache-size                      rw     6.1  MEMORY_SIZE (Ex: 3G,2M,200k,10000b)              nsslapd-dn-cachememsize                              Cache size of DN in term of memory space (Default: 10M)<br/>
+SER  import-cache-size                  rw          MEMORY_SIZE (Ex: 3G,2M,200k,10000b)              nsslapd-import-cachesize                             Size of the database cache used in the import process (Default: 64M)<br/>
+SUF  entry-cache-count                  rw          INTEGER | unlimited                              nsslapd-cachesize                                    Cache size in term of entries (Default: unlimited)<br/>
+SUF  entry-cache-size                   rw          MEMORY_SIZE (Ex: 3G,2M,200k,10000b)              nsslapd-cachememsize                                 Cache size in term of memory space (Default: 10M)<br/>
+[dsee@dsee Desktop]$</font><br/></div><div><font face="Courier New"><br/></font></div><div><u><b>Obtain the current database cache level:</b></u></div><div>[dsee@dsee ~]$ <b>dsconf get-server-prop -h localhost -p 1389 db-cache-size</b><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+db-cache-size  :  32M<br/>
+[dsee@dsee ~]$<br/></div><div><br/></div><div style="font-size: 40px;"><b><u>Monitor Database Cache:</u></b></div><div>[dsee@dsee ~]$ <b>ldapsearch -h localhost -p 1389 -D cn=admin,cn=Administrators,cn=config -w - -b &quot;cn=monitor,cn=ldbm database,cn=plugins,cn=config&quot; &quot;(objectclass=*)&quot;</b><br/>
+Enter bind password:<br/>
+version: 1<br/>
+dn: cn=monitor, cn=ldbm database, cn=plugins, cn=config<br/>
+objectClass: top<br/>
+objectClass: extensibleObject<br/>
+cn: monitor<br/>
+database: ldbm database<br/>
+dbcachehits: 60287<br/>
+dbcachetries: 60436<br/>
+dbcachehitratio: 99<br/>
+dbcachepagein: 149<br/>
+dbcachepageout: 268<br/>
+dbcacheroevict: 0<br/>
+dbcacherwevict: 0<br/><br/>
+dn: cn=database, cn=monitor, cn=ldbm database, cn=plugins, cn=config<br/>
+objectClass: top<br/>
+objectClass: extensibleObject<br/>
+cn: database<br/>
+nsslapd-db-abort-rate: 0<br/>
+nsslapd-db-configured-txns: 210<br/>
+nsslapd-db-active-txns: 0<br/>
+nsslapd-db-max-txns: 2<br/>
+nsslapd-db-cache-hit: 60287<br/>
+nsslapd-db-cache-try: 60436<br/>
+nsslapd-db-cache-region-wait-rate: 1<br/>
+nsslapd-db-cache-size-bytes: 41943780<br/>
+nsslapd-db-clean-pages: 247<br/>
+nsslapd-db-commit-rate: 334<br/>
+nsslapd-db-deadlock-rate: 0<br/>
+nsslapd-db-dirty-pages: 0<br/>
+nsslapd-db-hash-buckets: 4099<br/>
+nsslapd-db-hash-elements-examine-rate: 60408<br/>
+nsslapd-db-hash-search-rate: 60686<br/>
+nsslapd-db-lock-conflicts: 0<br/>
+nsslapd-db-lock-region-wait-rate: 0<br/>
+nsslapd-db-lock-request-rate: 60447<br/>
+nsslapd-db-lockers: 9<br/>
+nsslapd-db-configured-locks: 20000<br/>
+nsslapd-db-current-locks: 4<br/>
+nsslapd-db-max-locks: 142<br/>
+nsslapd-db-log-bytes-since-checkpoint: 0<br/>
+nsslapd-db-log-region-wait-rate: 0<br/>
+nsslapd-db-log-write-rate: 3358908<br/>
+nsslapd-db-log-write-count: 318<br/>
+nsslapd-db-log-write-count-fill: 0<br/>
+nsslapd-db-log-flush-count: 318<br/>
+nsslapd-db-log-flush-commit: 318<br/>
+nsslapd-db-log-max-commit-per-flush: 0<br/>
+nsslapd-db-log-min-commit-per-flush: 0<br/>
+nsslapd-db-longest-chain-length: 2<br/>
+nsslapd-db-page-create-rate: 100<br/>
+nsslapd-db-page-read-rate: 149<br/>
+nsslapd-db-page-ro-evict-rate: 0<br/>
+nsslapd-db-page-rw-evict-rate: 0<br/>
+nsslapd-db-page-trickle-rate: 0<br/>
+nsslapd-db-page-write-rate: 268<br/>
+nsslapd-db-pages-in-use: 247<br/>
+nsslapd-db-txn-region-wait-rate: 0<br/></div><div><font face="Courier New"><br/></font></div><div><b style="font-size: 40px;"><u>Obtain current entry cache level:</u></b></div><div>If the entry cache for a suffix is large enough to hold most of the entries in the suffix and if the cache is primed, the hit ratio (entrycachehitratio) should be high. <br/>
+If you have primed the cache, you will see that as the previously empty entry cache fills, entry cache size (currententrycachesize) approaches the maximum entry cache size (maxentrycachesize). <b>Ideally, the size in entries (currententrycachecount) should be either equal to or very close to the total number of entries in the suffix (ldapentrycachecount)</b></div><div><br/></div><div>[dsee@dsee ~]$ <b>dsconf get-suffix-prop -h localhost -p 1389 dc=example,dc=com entry-cache-count entry-cache-size</b><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+entry-cache-count  :  unlimited<br/>
+entry-cache-size   :  10M<br/></div><div><font face="Courier New"><br/></font></div><div><u style="font-size: 40px;"><b>To Configure Heap Memory Threshold:</b></u> By default, the <b>heap-high-threshold-size</b> and <b>heap-low-threshold-size</b> properties are <b>undefined</b>.</div><div><br/></div><div>[dsee@dsee ~]$ <b>dsconf get-server-prop -h localhost -p 1389 look-through-limit search-size-limit search-time-limit idle-timeout</b><br/><font face="Courier New">Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+idle-timeout        :  none<br/>
+look-through-limit  :  5000<br/>
+search-size-limit   :  2000<br/>
+search-time-limit   :  3600</font><br/></div><div><br/></div><div><br/></div><div style="font-size: 40px;"><b><u>Security: Certificates:</u></b></div><div>[dsee@dsee ~]$ <b>dsadm list-certs -C /opt/sun/dsee/ds</b><br/><font face="Courier New">Alias                                                                              Valid from        Expires on        Built-in?  Issued by                                                                Issued to<br/>
+---------------------------------------------------------------------------------  ----------------  ----------------  ---------  -----------------------------------------------------------------------  --------------<br/><b>Builtin Object Token:ABAecom (sub., Am. Bankers Assn.) Root CA </b>                    1999/07/12 19:33  2009/07/09 19:33  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AOL Time Warner Root Certification Authority 1                2002/05/29 08:00  2037/11/20 16:03  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AOL Time Warner Root Certification Authority 2                2002/05/29 08:00  2037/09/29 01:43  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AddTrust External Root                                        2000/05/30 12:48  2020/05/30 12:48  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AddTrust Low-Value Services Root                              2000/05/30 12:38  2020/05/30 12:38  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AddTrust Public Services Root                                 2000/05/30 12:41  2020/05/30 12:41  y          -                                                                        Same as issuer<br/>
+Builtin Object Token:AddTrust Qualified Certificates Root                          2000/05/30 12:44  2020/05/30 12:44  y          -                                                                        Same as issuer<br/></font></div><div><font face="Courier New">...</font></div><div><font face="Courier New"><br/></font></div><div>[dsee@dsee ~]$ <b>dsadm show-cert /opt/sun/dsee/ds &quot;Builtin Object Token:ABAecom (sub., Am. Bankers Assn.) Root CA&quot;</b><br/>
+Certificate:<br/>
+    Data:<br/>
+        Version: 3 (0x2)<br/>
+        Serial Number:<br/>
+            00:d0:1e:40:90:00:00:46:52:00:00:00:01:00:00:00:<br/>
+            04<br/>
+        Signature Algorithm: PKCS #1 SHA-1 With RSA Encryption<br/>
+        Issuer:<br/>
+            &quot;E=admin@digsigtrust.com,CN=ABA.ECOM Root CA,O=&quot;ABA.ECOM, INC.&quot;,L<br/>
+            =Washington,ST=DC,C=US&quot;<br/>
+        Validity:<br/>
+            Not Before: Mon Jul 12 17:33:53 1999<br/>
+            Not After : Thu Jul 09 17:33:53 2009<br/>
+        Subject:<br/>
+            &quot;E=admin@digsigtrust.com,CN=ABA.ECOM Root CA,O=&quot;ABA.ECOM, INC.&quot;,L<br/>
+            =Washington,ST=DC,C=US&quot;<br/>
+        Subject Public Key Info:<br/></div><div><hr/><b style="font-size: 40px;">To Back Up Your Directory Data</b></div><div><br/></div><div>Note –<b>You can back up directory data while the server is running by using</b> the command <b>dsconf backup</b> command. <b>However, if changes are made to the directory data while the backup is running, proper recovery is more difficult</b>. To avoid this problem when using dsconf backup, set replication referrals or make the server read-only.</div><div><br/></div><div>[dsee@dsee ~]$ dsadm backup /opt/sun/dsee/ds /tmp/20140117<br/>
+The instance must be stopped.<br/>
+[dsee@dsee ~]$ <font color="#E30000"><b>dsadm stop /opt/sun/dsee/ds</b></font><br/>
+Directory Server instance '/opt/sun/dsee/ds' stopped<br/>
+[dsee@dsee ~]$ <font color="#E30000"><b>dsadm backup /opt/sun/dsee/ds /tmp/20140117</b></font><br/>
+[17/Jan/2014:14:17:25 +0100] - Backup starting (/tmp/20140117)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 1 (/tmp/20140117/example/example_pwdgraceusetime.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 2 (/tmp/20140117/example/example_cn.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 3 (/tmp/20140117/example/example_givenName.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 4 (/tmp/20140117/example/example_pwdfailuretime.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 5 (/tmp/20140117/example/example_nsuniqueid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 6 (/tmp/20140117/example/example_uniquemember.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 7 (/tmp/20140117/example/example_sn.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 8 (/tmp/20140117/example/example_telephoneNumber.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 9 (/tmp/20140117/example/example_pwdaccountlockedtime.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 10 (/tmp/20140117/example/example_parentid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 11 (/tmp/20140117/example/example_nsLIProfileName.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 12 (/tmp/20140117/example/example_id2entry.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 13 (/tmp/20140117/example/example_aci.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 14 (/tmp/20140117/example/example_mail.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 15 (/tmp/20140117/example/example_nscpEntryDN.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 16 (/tmp/20140117/example/example_nsRoleDN.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 17 (/tmp/20140117/example/example_owner.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 18 (/tmp/20140117/example/example_nsds5ReplConflict.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 19 (/tmp/20140117/example/example_nsCalXItemId.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 20 (/tmp/20140117/example/example_mailAlternateAddress.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 21 (/tmp/20140117/example/example_uid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 22 (/tmp/20140117/example/DBVERSION)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 23 (/tmp/20140117/example/example_member.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 24 (/tmp/20140117/example/example_entrydn.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 25 (/tmp/20140117/example/example_pipstatus.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 26 (/tmp/20140117/example/example_numsubordinates.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 27 (/tmp/20140117/example/example_mailHost.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 28 (/tmp/20140117/example/example_nswcalCALID.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 29 (/tmp/20140117/example/example_objectclass.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 30 (/tmp/20140117/example/example_pipuid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 31 (/tmp/20140117/example/example_ancestorid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 32 (/tmp/20140117/example/example_seeAlso.db3)<br/>
+[17/Jan/2014:14:17:26 +0100] - Backup completed (/tmp/20140117)<br/></div><div>[dsee@dsee ~]$ <font color="#E30000"><b>dsadm start /opt/sun/dsee/ds</b></font><br/>
+Directory Server instance '/opt/sun/dsee/ds' started: pid=19563<br/></div><div><br/></div><div><br/></div><div><b><u>Back up your dse.ldif configuration file.:</u>  </b>When restoring a server, the dse.ldif configuration file must contain the same configuration information as when the server was backed up.</div><div>[dsee@dsee ~]$ find /opt/ -name dse.ldif<br/>
+/opt/sun/dsee/ds/conf_bk/dse.ldif<br/>
+/opt/sun/dsee/ds/config/dse.ldif<br/>
+/opt/sun/dsee/var/dscc6/dcc/ads/conf_bk/dse.ldif<br/>
+/opt/sun/dsee/var/dscc6/dcc/ads/config/dse.ldif<br/></div><div>[dsee@dsee ~]$ <font color="#E30000">cp /opt/sun/dsee/var/dscc6/dcc/ads/config/dse.ldif /tmp</font></div><div>[dsee@dsee ~]$ <font color="#E30000">cp /opt/sun/dsee/ds/config/dse.ldif /tmp/dse1.ldif</font><br/>
+[dsee@dsee ~]$ cp /opt/sun/dsee/var/dscc6/dcc/ads/config/dse.ldif /tmp/dse2.ldif<br/></div><div><b><u><br/></u></b></div><div><b><u>Backing Up to LDIF: </u></b>Backing up to LDIF allows you to back up directory data to a formatted LDIF file.</div><div>If your server is local and stopped, type:</div><div><br/></div><div>[dsee@dsee ~]$ <font color="#E30000"><b>dsadm stop /opt/sun/dsee/ds</b></font></div><div>[dsee@dsee ~]$ <b>dsconf export -h localhost -p 1389 dc=example,dc=com /tmp/export.ldif</b></div><div>Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+Enter &quot;cn=Directory Manager&quot; password: ## Beginning export of 'example'<br/>
+## example: Processed 313 entries (100%).<br/>
+## Export finished.<br/><br/>
+Task completed (slapd exit code: 0).<br/></div><div>[dsee@dsee ~]$ <font color="#E30000"><b>dsadm start /opt/sun/dsee/ds</b></font></div><div><br/></div><div><hr/><span style="font-size: 40px;">Configuring Network Parameters</span></div><div style="font-size: 40px;">Configuring Window Size (consumer/replica host required)</div><div><br/></div><div>The window size (default value10) represents the maximum number of update messages that can be sent without immediate acknowledgment from the consumer.</div><div>It is more efficient to send many messages in quick succession instead of waiting for an acknowledgment after each message. Using the appropriate window size, you can eliminate the time replicas spend waiting for replication updates or acknowledgments to arrive.</div><div>If your consumer replica is lagging behind the supplier, <b>increase the window size to a higher value than the default, such as 100, and check replication performance again before making further adjustments. When the replication update rate is high and the time between updates is therefore small, even replicas connected by a local area network (LAN) can benefit from a higher window size.</b></div><div><br/></div><div><hr/><span style="font-size: 40px;">Viewing Directory Server Logs</span></div><div><br/></div><div>[dsee@dsee ~]$ dsconf get-log-prop<br/>
+Operand is missing<br/>
+Usage: dsconf get-log-prop [-T] [-Z UNIT] LOG_TYPE [PROP...]<br/></div><div><font face="Courier New">[dsee@dsee ~]$ <b>dsconf get-log-prop -h localhost -p 1389 access</b><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+buffering-enabled         :  on<br/>
+enabled                   :  on<br/>
+level                     :  default<br/>
+max-age                   :  1M<br/>
+max-disk-space-size       :  500M<br/>
+max-file-count            :  10<br/>
+max-size                  :  100M<br/>
+min-free-disk-space-size  :  5M<br/>
+path                      :  /opt/sun/dsee/ds/logs/access<br/>
+perm                      :  600<br/>
+rotation-interval         :  1d<br/>
+rotation-min-file-size    :  unlimited<br/>
+rotation-time             :  undefined<br/>
+verbose-enabled           :  N/A<br/>
+[dsee@dsee ~]$<br/>
+[dsee@dsee ~]$<br/>
+[dsee@dsee ~]$ <b>dsconf get-log-prop -h localhost -p 1389 access path</b><br/>
+Certificate &quot;CN=localhost.localdomain, CN=1636, CN=Directory Server, O=Sun Microsystems&quot; presented by the server is not trusted.<br/>
+Type &quot;Y&quot; to accept, &quot;y&quot; to accept just once, &quot;n&quot; to refuse, &quot;d&quot; for more details: y<br/>
+Enter &quot;cn=Directory Manager&quot; password:<br/>
+path  :  /opt/sun/dsee/ds/logs/access<br/>
+[dsee@dsee ~]$<br/></font></div><div><b>[dsee@dsee ~]$ dsadm show-error-log -A 24h /opt/sun/dsee/ds</b><br/>
+[17/Jan/2014:11:57:48 +0100] - Sun-Java(tm)-System-Directory/6.3 B2008.0311.0224 (32-bit) starting up<br/>
+[17/Jan/2014:11:57:49 +0100] - Listening on all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:11:57:49 +0100] - Listening on all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:11:57:49 +0100] - slapd started.<br/>
+[17/Jan/2014:11:57:49 +0100] - INFO: 313 entries in the directory database.<br/>
+[17/Jan/2014:11:57:49 +0100] - INFO: add:0, modify:0, modrdn:0, search:0, delete:0, compare:0, bind:0 since startup.<br/>
+[17/Jan/2014:12:43:58 +0100] - INFORMATION - cos-plugin - conn=-1 op=-1 msgId=-1 -  cos_cache_getref: no cos cache created<br/>
+[17/Jan/2014:13:07:00 +0100] - Closing all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:13:07:00 +0100] - Closing all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:13:07:00 +0100] - DEBUG - conn=-1 op=-1 msgId=-1 -  slapd shutting down - signaling operation threads<br/>
+[17/Jan/2014:13:07:00 +0100] - slapd shutting down - waiting for 0 threads to terminate<br/>
+[17/Jan/2014:13:07:00 +0100] - Waiting for 6 database threads to stop<br/>
+[17/Jan/2014:13:07:01 +0100] - All database threads now stopped<br/>
+[17/Jan/2014:13:07:01 +0100] - slapd stopped.<br/>
+[17/Jan/2014:13:51:42 +0100] - Sun-Java(tm)-System-Directory/6.3 B2008.0311.0224 (32-bit) starting up<br/>
+[17/Jan/2014:13:51:51 +0100] - Listening on all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:13:51:51 +0100] - Listening on all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:13:51:51 +0100] - INFO: 313 entries in the directory database.<br/>
+[17/Jan/2014:13:51:51 +0100] - INFO: add:0, modify:0, modrdn:0, search:0, delete:0, compare:0, bind:0 since startup.<br/>
+[17/Jan/2014:13:51:51 +0100] - slapd started.<br/>
+[17/Jan/2014:13:57:46 +0100] - INFORMATION - cos-plugin - conn=-1 op=-1 msgId=-1 -  cos_cache_getref: no cos cache created<br/>
+[17/Jan/2014:14:17:05 +0100] - Closing all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:14:17:05 +0100] - Closing all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:14:17:05 +0100] - DEBUG - conn=-1 op=-1 msgId=-1 -  slapd shutting down - signaling operation threads<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 30 threads to terminate<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 29 threads to terminate<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 28 threads to terminate<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 27 threads to terminate<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 26 threads to terminate<br/>
+[17/Jan/2014:14:17:05 +0100] - slapd shutting down - waiting for 25 threads to terminate<br/></div><div><br/></div><div><b>[dsee@dsee ~]$ dsadm show-error-log -L /opt/sun/dsee/ds            --------------------&gt; equivale a &quot;-L 20&quot; (tail -f 20)</b><br/>
+Operand is missing<br/>
+Usage: dsadm show-error-log --max-age DURATION INSTANCE_PATH<br/>
+Usage: dsadm show-error-log [ --last-lines LAST_LINES ] INSTANCE_PATH<br/>
+[dsee@dsee ~]$ dsadm show-error-log /opt/sun/dsee/ds<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 23 (/tmp/20140117/example/example_member.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 24 (/tmp/20140117/example/example_entrydn.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 25 (/tmp/20140117/example/example_pipstatus.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 26 (/tmp/20140117/example/example_numsubordinates.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 27 (/tmp/20140117/example/example_mailHost.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 28 (/tmp/20140117/example/example_nswcalCALID.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 29 (/tmp/20140117/example/example_objectclass.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 30 (/tmp/20140117/example/example_pipuid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 31 (/tmp/20140117/example/example_ancestorid.db3)<br/>
+[17/Jan/2014:14:17:25 +0100] - Backing up file 32 (/tmp/20140117/example/example_seeAlso.db3)<br/>
+[17/Jan/2014:14:17:26 +0100] - Backup completed (/tmp/20140117)<br/>
+[17/Jan/2014:14:18:22 +0100] - Sun-Java(tm)-System-Directory/6.3 B2008.0311.0224 (32-bit) starting up<br/>
+[17/Jan/2014:14:18:22 +0100] - Listening on all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:14:18:22 +0100] - Listening on all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:14:18:22 +0100] - slapd started.<br/>
+[17/Jan/2014:14:18:22 +0100] - INFO: 313 entries in the directory database.<br/>
+[17/Jan/2014:14:18:22 +0100] - INFO: add:0, modify:0, modrdn:0, search:0, delete:0, compare:0, bind:0 since startup.<br/>
+[17/Jan/2014:14:29:13 +0100] - INFORMATION - cos-plugin - conn=-1 op=-1 msgId=-1 -  cos_cache_getref: no cos cache created<br/>
+[17/Jan/2014:14:29:13 +0100] - WARNING&lt;20515&gt; - Backend Database - conn=-1 op=-1 msgId=-1 -  could not read ruv entry, this ldif should not be used to initialize replicas<br/>
+[17/Jan/2014:14:29:13 +0100] - export example: Processed 313 entries (100%).<br/></div><div><br/></div><div><b>[dsee@dsee ~]$ ls -l /opt/sun/dsee/ds/logs/</b><br/><font face="Courier New">total 208<br/>
+-rw-------  1 dsee dsee  24606 Jan 17 14:47 <b>access</b><br/>
+-rw-------  1 dsee dsee 117418 Jan 16 13:03 access.20140116-111003<br/>
+-rw-------  1 dsee dsee    156 Jan 17 11:57 access.rotationinfo<br/>
+-rw-------  1 dsee dsee      0 Jan 16 11:10 audit<br/>
+-rw-------  1 dsee dsee     63 Jan 16 11:10 audit.rotationinfo<br/>
+-rw-------  1 dsee dsee  10997 Jan 17 14:29 errors<br/>
+-rw-------  1 dsee dsee     63 Jan 16 11:10 errors.rotationinfo<br/>
+-rw-r--r--  1 dsee dsee      6 Jan 17 14:18 pid</font><br/></div><div><font face="Courier New"><br/></font></div><div>[dsee@dsee ~]$ <font color="#E30000"><b>tail -f /opt/sun/dsee/ds/logs/errors</b></font><br/>
+[17/Jan/2014:14:17:26 +0100] - Backup completed (/tmp/20140117)<br/>
+[17/Jan/2014:14:18:22 +0100] - Sun-Java(tm)-System-Directory/6.3 B2008.0311.0224 (32-bit) starting up<br/>
+[17/Jan/2014:14:18:22 +0100] - Listening on all interfaces port 1389 for LDAP requests<br/>
+[17/Jan/2014:14:18:22 +0100] - Listening on all interfaces port 1636 for LDAPS requests<br/>
+[17/Jan/2014:14:18:22 +0100] - slapd started.<br/>
+[17/Jan/2014:14:18:22 +0100] - INFO: 313 entries in the directory database.<br/>
+[17/Jan/2014:14:18:22 +0100] - INFO: add:0, modify:0, modrdn:0, search:0, delete:0, compare:0, bind:0 since startup.<br/>
+[17/Jan/2014:14:29:13 +0100] - INFORMATION - cos-plugin - conn=-1 op=-1 msgId=-1 -  cos_cache_getref: no cos cache created<br/>
+[17/Jan/2014:14:29:13 +0100] - WARNING&lt;20515&gt; - Backend Database - conn=-1 op=-1 msgId=-1 -  could not read ruv entry, this ldif should not be used to initialize replicas<br/>
+[17/Jan/2014:14:29:13 +0100] - export example: Processed 313 entries (100%).<br/><br/>
+[dsee@dsee ~]$<br/>
+[dsee@dsee ~]$ <b><font color="#E30000">tail -f /opt/sun/dsee/ds/logs/access</font></b><br/>
+[17/Jan/2014:14:46:53 +0100] conn=3 op=-1 msgId=-1 - SSL 128-bit RC4<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=1 msgId=2 - BIND dn=&quot;cn=Directory Manager&quot; method=128 version=3<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=1 msgId=2 - RESULT err=0 tag=97 nentries=0 etime=4 dn=&quot;cn=directory manager&quot;<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=2 msgId=3 - SRCH base=&quot;cn=config&quot; scope=0 filter=&quot;(objectClass=*)&quot; attrs=&quot;nsslapd-config-magic&quot;<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=2 msgId=3 - RESULT err=0 tag=101 nentries=1 etime=0<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=3 msgId=4 - SRCH base=&quot;cn=config&quot; scope=0 filter=&quot;(objectClass=*)&quot; attrs=&quot;nsslapd-auditlog-logmaxdiskspace nsslapd-accesslog-maxlogsize nsslapd-{access|error|audit}log-logrotationtimeunit nsslapd-auditlog-permissions nsslapd-auditlog-logexpirationtime nsslapd-accesslog-logrotationtime nsslapd-accesslog nsslapd-errorlog-logminfreediskspace nsslapd-errorlog nsslapd-auditlog-maxlogsize nsslapd-infolog-area nsslapd-errorlog-permissions nsslapd-{access|error|audit}log-permissions nsslapd-errorlog-logexpirationtimeunit nsslapd-{access|error|audit}log-logrotationtime nsslapd-auditlog-logrotationtime nsslapd-accesslog-logrotationtimeunit nsslapd-accesslog-level nsslapd-accesslog-logmaxdiskspace nsslapd-{access|error|audit}log-maxlogsperdir nsslapd-errorlog-logging-enabled nsslapd-infolog-level nsslapd-{access|error|audit}log nsslapd-{access|error|audit}log-logminfreediskspace nsslapd-errorlog-logrotationtime nsslapd-auditlog-maxlogsperdir nsslapd-accesslog-logexpirationtimeunit nsslapd-auditlog-logminfreediskspace nsslapd-{access|error|audit}log-maxlogsize ...&quot;<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=3 msgId=4 - RESULT err=0 tag=101 nentries=1 etime=0<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=4 msgId=5 - UNBIND<br/>
+[17/Jan/2014:14:46:55 +0100] conn=3 op=4 msgId=-1 - closing from 127.0.0.1:32923 - U1 - Connection closed by unbind client -<br/>
+[17/Jan/2014:14:46:56 +0100] conn=3 op=-1 msgId=-1 - closed.<br/></div><div style="font-size: 40px;"><hr/></div><div style="font-size: 40px;"><b>ERRORS:</b></div><div><b><br/></b></div><div style="font-size: 23px;"><b>1) DSCC not running</b></div><div style="font-size: 23px;"><b><br/></b></div><div><b>[dsee@dsee Desktop]$ <font color="#E30000">/opt/sun/dsee/dscc6/bin/dsccsetup status</font></b><br/>
+***<br/>
+Sun Java (TM) Web Console is not installed<br/>
+***<br/>
+DSCC Agent is registered in Cacao<br/>
+***<br/>
+DSCC Registry has been created<br/>
+Path of DSCC registry is /opt/sun/dsee/var/dscc6/dcc/ads<br/>
+Port of DSCC registry is 3998<br/>
+DSCC registry is not running. You may start it using:<br/>
+         <b><font color="#E30000">/opt/sun/dsee/ds6/bin/dsadm start /opt/sun/dsee/var/dscc6/dcc/ads</font></b><br/>
+***<br/></div><div><br/></div><div><b><br/></b></div><div>[dsee@dsee Desktop]$  <font color="#E30000">/opt/sun/dsee/ds6/bin/dsadm start /opt/sun/dsee/var/dscc6/dcc/ads</font><br/>
+Waiting for Directory Server instance '/opt/sun/dsee/var/dscc6/dcc/ads' to start...<br/>
+Directory Server instance '/opt/sun/dsee/var/dscc6/dcc/ads' started: pid=20997<br/>
+[dsee@dsee Desktop]$ <font color="#E30000">/opt/sun/dsee/ds6/bin/dsadm info --all --separator = /opt/sun/dsee/var/dscc6/dcc/ads</font><br/>
+instance-path=/opt/sun/dsee/var/dscc6/dcc/ads<br/>
+owner=dsee(dsee)<br/>
+port=3998<br/>
+listen-address=0.0.0.0<br/>
+secure-port=3999<br/>
+secure-listen-address=0.0.0.0<br/>
+bit-format=32-bit<br/>
+state=running<br/>
+server-pid=20997<br/>
+dscc-url=-<br/>
+layout-tag=D-A00<br/>
+[dsee@dsee Desktop]$<br/></div><div><br/></div><div><hr/></div><div><b style="font-size: 23px;">2) dsccsetup not run by dsee user</b></div><div><b style="font-size: 23px;"> </b></div><div>[dsee@localhost bin]$ <b>/opt/sun/dsee/dscc6/bin/dsccsetup initialize</b><br/>
+***<br/>
+DSCC Application cannot be registered because it is not installed<br/>
+***<br/>
+## Failed to run /opt/sun/dsee/dsee6/cacao_2/cacao/bin/cacaoadm list-modules -r<br/>
+####<br/>
+#### This command must be run by user: [dsee].<br/>
+####<br/>
+## Exit code is 13<br/>
+***</div><div><br/></div><div><hr/><br/></div><div><u><b>TERMINOLOGÍA:</b></u></div><div><br/></div><div>ACIs: access control instructions</div><div> </div><div><br/></div><div><br/></div><div><br/></div></span>
+</div></body></html> 
